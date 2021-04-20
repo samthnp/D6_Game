@@ -1,21 +1,21 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
    public Vector3 mouseLocation;
-
+   public float diceFocusMoveSpeed;
+   
    public GameObject focusDice;
    public Transform focusDiceTransform;
 
    public GameObject removeDice;
-   public Transform RemoveDiceTransform;
+   public Transform removeDiceTransform;
 
    public DiceFocusPos diceFocusPos;
 
-   public float diceFocusMoveSpeed;
+   public float playerHealth = 6;
+   public HealthUI healthUI;
 
    private void Start()
    {
@@ -23,12 +23,13 @@ public class Player : MonoBehaviour
       focusDiceTransform = focusDice.transform;
 
       removeDice = GameObject.FindGameObjectWithTag("RemoveDice");
-      RemoveDiceTransform = removeDice.transform;
+      removeDiceTransform = removeDice.transform;
    }
 
    private void Update()
    {
       OnMouseClick();
+      ReloadGameScene();
    }
 
    private void OnMouseClick()
@@ -44,14 +45,17 @@ public class Player : MonoBehaviour
          // Check object of raycast from mouse
          if (hit.collider != null)
          {
-            // move the dice from the grid into focus
+            
+            
+            //////////////////////// move the dice from the grid into focus ////////////////////////
+            
             if (hit.collider.CompareTag("DiceObject") && diceFocusPos.focusDiceOccupy == false)
             {
                Debug.Log("Hit something : " + hit.collider.name);
                // moving the dice into focus
 
                hit.transform.position = 
-                  Vector2.Lerp(hit.transform.position, focusDiceTransform.position, diceFocusMoveSpeed);
+                  Vector2.Lerp(hit.transform.position, focusDiceTransform.position, diceFocusMoveSpeed * Time.deltaTime);
                Debug.Log("Move dice into focus");
 
                Invoke("FocusIsOccupy", 0.5f);
@@ -59,12 +63,18 @@ public class Player : MonoBehaviour
                hit.transform.tag = "FocusDice";
             }
             
-            // removing the focus dice
+            
+            
+            
+            //////////////////////// removing the focus dice /////////////////////////////
+            
             if (hit.collider.CompareTag("FocusDice") && diceFocusPos.focusDiceOccupy == true)
             {
+               DecreasePlayerHealth();
+               
                // removing the dice
                hit.transform.position =
-                  Vector2.Lerp(hit.transform.position, RemoveDiceTransform.position, diceFocusMoveSpeed);
+                  Vector2.Lerp(hit.transform.position, removeDiceTransform.position, diceFocusMoveSpeed * Time.deltaTime);
                Debug.Log("Removing dice");
                
                Invoke("FocusIsNotOccupy", 0.5f);
@@ -82,6 +92,29 @@ public class Player : MonoBehaviour
    private void FocusIsNotOccupy()
    {
       diceFocusPos.focusDiceOccupy = false;
+   }
+
+   public void DecreasePlayerHealth()
+   {
+      playerHealth = playerHealth - 1;
+      healthUI.HealthUICheck();
+      GameOverCheck();
+   }
+
+   public void GameOverCheck()
+   {
+      if (playerHealth <= 0)
+      {
+         SceneManager.LoadScene("GameOverScene");
+      }
+   }
+
+   private void ReloadGameScene()
+   {
+      if (Input.GetKeyUp(KeyCode.R))
+      {
+         SceneManager.LoadScene("GameScene");
+      }
    }
    
 }
