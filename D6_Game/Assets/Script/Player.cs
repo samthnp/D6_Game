@@ -17,6 +17,10 @@ public class Player : MonoBehaviour
    public float playerHealth = 6;
    public HealthUI healthUI;
 
+   public bool chainActivate = false;
+
+   public ProgressBar progressBar;
+
    private void Start()
    {
       focusDice = GameObject.FindGameObjectWithTag("FocusTransform");
@@ -54,19 +58,27 @@ public class Player : MonoBehaviour
                Debug.Log("Hit something : " + hit.collider.name);
                // moving the dice into focus
 
-               hit.transform.position = 
-                  Vector2.Lerp(hit.transform.position, focusDiceTransform.position, diceFocusMoveSpeed * Time.deltaTime);
+               hit.transform.position = Vector2.MoveTowards(hit.transform.position, focusDiceTransform.position,
+                  diceFocusMoveSpeed * Time.fixedDeltaTime);
+               
                Debug.Log("Move dice into focus");
 
                Invoke("FocusIsOccupy", 0.5f);
                
                hit.transform.tag = "FocusDice";
+               
+               PlayerReceiveScore();
+               
+               chainActivate = true;
+
+               if (chainActivate == true)
+               {
+                  PlayerReceiveChainPoint();
+               }
             }
             
             
-            
-            
-            //////////////////////// removing the focus dice /////////////////////////////
+            //////////////////////// removing the focus dice and decrease player's health /////////////////////////////
             
             if (hit.collider.CompareTag("FocusDice") && diceFocusPos.focusDiceOccupy == true)
             {
@@ -78,6 +90,9 @@ public class Player : MonoBehaviour
                Debug.Log("Removing dice");
                
                Invoke("FocusIsNotOccupy", 0.5f);
+               
+               chainActivate = false;
+               ChainPointReset();
             }
          }
 
@@ -94,6 +109,24 @@ public class Player : MonoBehaviour
       diceFocusPos.focusDiceOccupy = false;
    }
 
+   private void PlayerReceiveScore()
+   {
+      ScoreCounter.scoreValue = ScoreCounter.scoreValue + 1;
+      
+      // also fill in the progress on the progression bar
+      progressBar.IncreaseProgress(1);
+   }
+
+   private void PlayerReceiveChainPoint()
+   {
+      ChainCounter.chainValue = ChainCounter.chainValue + 1;
+   }
+   
+   private void ChainPointReset()
+   {
+      ChainCounter.chainValue = 0;
+   }
+
    public void DecreasePlayerHealth()
    {
       playerHealth = playerHealth - 1;
@@ -105,6 +138,7 @@ public class Player : MonoBehaviour
    {
       if (playerHealth <= 0)
       {
+         print("Game over");
          SceneManager.LoadScene("GameOverScene");
       }
    }

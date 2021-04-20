@@ -13,11 +13,6 @@ public class HealthUI : MonoBehaviour
 
     public Player player;
 
-    private void Update()
-    {
-        HealthUICheck();
-    }
-
     public void HealthUICheck()
     {
         if (player.playerHealth == 5)
