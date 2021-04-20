@@ -1,18 +1,25 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class DiceObject : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private GameObject focusDice;
 
-    // Update is called once per frame
-    void Update()
+    private Transform focusDicePosition;
+
+    private float diceMoveSpeed;
+
+    private void Start()
     {
-        
+        focusDice = GameObject.FindGameObjectWithTag("FocusDice");
+
+        focusDicePosition = focusDice.transform;
+    }
+    
+    public void moveDiceIntoFocus()
+    {
+        transform.position = Vector2.Lerp(transform.position, focusDicePosition.position, diceMoveSpeed * Time.deltaTime);
     }
 }
