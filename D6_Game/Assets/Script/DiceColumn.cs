@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class DiceColumn : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public GameObject hiddenSpawner;
+    private Transform hiddenSpawnTransform;
+
+    public GameObject upperDice;
+    private Transform upperDiceTransform;
+
+    public GameObject lowerDice;
+    public Transform lowerDiceTransform;
+    
+    
+
 }
