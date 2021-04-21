@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8141647164268163651}
   - component: {fileID: 633681576383071650}
   - component: {fileID: -3022153418682259385}
+  - component: {fileID: -260100045705593774}
   m_Layer: 0
   m_Name: blue dice 2
   m_TagString: DiceObject
@@ -109,3 +110,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 20.48, y: 20.48}
   m_EdgeRadius: 0
+--- !u!114 &-260100045705593774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3671079734288498103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f20e89cdd8d105408e33c8e915c8e06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diceColor: blue
+  diceNumberValue: 2

@@ -5,7 +5,9 @@ using UnityEngine;
 
 public class DiceObject : MonoBehaviour
 {
-    
-    
+
+    public string diceColor;
+
+    public int diceNumberValue;
 
 }

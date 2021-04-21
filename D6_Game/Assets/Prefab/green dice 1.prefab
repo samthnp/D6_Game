@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6257143574145534765}
   - component: {fileID: 397465750894371472}
   - component: {fileID: 2728375810096771203}
+  - component: {fileID: -902226021645851601}
   m_Layer: 0
   m_Name: green dice 1
   m_TagString: DiceObject
@@ -109,3 +110,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 20.48, y: 20.48}
   m_EdgeRadius: 0
+--- !u!114 &-902226021645851601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56579473721146052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f20e89cdd8d105408e33c8e915c8e06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diceColor: green
+  diceNumberValue: 1

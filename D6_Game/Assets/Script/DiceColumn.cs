@@ -17,6 +17,10 @@ public class DiceColumn : MonoBehaviour
 
     private int whichDiceToSpawn;
 
+    private GameObject upperDice;
+    private GameObject lowerDice;
+    private GameObject hiddenDice;
+
     private Transform upperDiceTranform;
     private Transform lowerDiceTranform;
     private Transform hiddenDiceTranform;
@@ -53,7 +57,7 @@ public class DiceColumn : MonoBehaviour
         switch (whichDiceToSpawn)
         {
             case 1:
-                GameObject upperDice = Instantiate(blueDice1, upperSpawnerTransform.position, Quaternion.identity);
+                upperDice = Instantiate(blueDice1, upperSpawnerTransform.position, Quaternion.identity);
                 upperDiceTranform = upperDice.transform;
                 print(upperDiceTranform);
                 break;
@@ -215,4 +219,22 @@ public class DiceColumn : MonoBehaviour
                 break;
         }
     }
+
+    public void MoveUpperToLower()
+    {
+        upperDice.transform.position = 
+            Vector2.Lerp(upperDice.transform.position, lowerSpawner.transform.position, 100f * Time.deltaTime);
+    }
+    
+    public void MoveHiddenToUpper()
+    {
+        Invoke("DoTheMovement", 0.5f);
+    }
+
+    public void DoTheMovement()
+    {
+        hiddenDice.transform.position = 
+            Vector2.Lerp(hiddenDice.transform.position, upperSpawner.transform.position, 100f * Time.deltaTime);
+    }
+    
 }
