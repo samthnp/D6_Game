@@ -58,52 +58,62 @@ public class DiceColumn : MonoBehaviour
         {
             case 1:
                 upperDice = Instantiate(blueDice1, upperSpawnerTransform.position, Quaternion.identity);
-                upperDiceTranform = upperDice.transform;
-                print(upperDiceTranform);
+                
                 break;
             
             case 2:
                 Instantiate(blueDice2, upperSpawnerTransform.position, Quaternion.identity);
+                
                 break;
             
             case 3:
                 Instantiate(blueDice3, upperSpawnerTransform.position, Quaternion.identity);
+                
                 break;
             
             case 4:
                 Instantiate(blueDice4, upperSpawnerTransform.position, Quaternion.identity);
+                
                 break;
             
             case 5:
                 Instantiate(blueDice5, upperSpawnerTransform.position, Quaternion.identity);
+                
                 break;
             
             case 6:
                 Instantiate(blueDice6, upperSpawnerTransform.position, Quaternion.identity);
+                
                 break;
             
             case 7:
                 Instantiate(greenDice1, upperSpawnerTransform.position, Quaternion.identity);
+                
                 break;
             
             case 8:
                 Instantiate(greenDice2, upperSpawnerTransform.position, Quaternion.identity);
+                
                 break;
             
             case 9:
                 Instantiate(greenDice3, upperSpawnerTransform.position, Quaternion.identity);
+                
                 break;
             
             case 10:
                 Instantiate(greenDice4, upperSpawnerTransform.position, Quaternion.identity);
+                
                 break;
             
             case 11:
                 Instantiate(greenDice5, upperSpawnerTransform.position, Quaternion.identity);
+                
                 break;
             
             case 12:
                 Instantiate(greenDice6, upperSpawnerTransform.position, Quaternion.identity);
+                
                 break;
         }
     }
@@ -116,50 +126,62 @@ public class DiceColumn : MonoBehaviour
         {
             case 1:
                 Instantiate(blueDice1, lowerSpawnerTransform.position, Quaternion.identity);
+                
                 break;
             
             case 2:
                 Instantiate(blueDice2, lowerSpawnerTransform.position, Quaternion.identity);
+                
                 break;
             
             case 3:
                 Instantiate(blueDice3, lowerSpawnerTransform.position, Quaternion.identity);
+                
                 break;
             
             case 4:
                 Instantiate(blueDice4, lowerSpawnerTransform.position, Quaternion.identity);
+                
                 break;
             
             case 5:
                 Instantiate(blueDice5, lowerSpawnerTransform.position, Quaternion.identity);
+                
                 break;
             
             case 6:
                 Instantiate(blueDice6, lowerSpawnerTransform.position, Quaternion.identity);
+                
                 break;
             
             case 7:
                 Instantiate(greenDice1, lowerSpawnerTransform.position, Quaternion.identity);
+                
                 break;
             
             case 8:
                 Instantiate(greenDice2, lowerSpawnerTransform.position, Quaternion.identity);
+                
                 break;
             
             case 9:
                 Instantiate(greenDice3, lowerSpawnerTransform.position, Quaternion.identity);
+                
                 break;
             
             case 10:
                 Instantiate(greenDice4, lowerSpawnerTransform.position, Quaternion.identity);
+                
                 break;
             
             case 11:
                 Instantiate(greenDice5, lowerSpawnerTransform.position, Quaternion.identity);
+                
                 break;
             
             case 12:
                 Instantiate(greenDice6, lowerSpawnerTransform.position, Quaternion.identity);
+                
                 break;
         }
     }
@@ -172,50 +194,62 @@ public class DiceColumn : MonoBehaviour
         {
             case 1:
                 Instantiate(blueDice1, hiddenSpawnTransform.position, Quaternion.identity);
+                
                 break;
             
             case 2:
                 Instantiate(blueDice2, hiddenSpawnTransform.position, Quaternion.identity);
+                
                 break;
             
             case 3:
                 Instantiate(blueDice3, hiddenSpawnTransform.position, Quaternion.identity);
+                
                 break;
             
             case 4:
                 Instantiate(blueDice4, hiddenSpawnTransform.position, Quaternion.identity);
+                
                 break;
             
             case 5:
                 Instantiate(blueDice5, hiddenSpawnTransform.position, Quaternion.identity);
+                
                 break;
             
             case 6:
                 Instantiate(blueDice6, hiddenSpawnTransform.position, Quaternion.identity);
+                
                 break;
             
             case 7:
                 Instantiate(greenDice1, hiddenSpawnTransform.position, Quaternion.identity);
+                
                 break;
             
             case 8:
                 Instantiate(greenDice2, hiddenSpawnTransform.position, Quaternion.identity);
+                
                 break;
             
             case 9:
                 Instantiate(greenDice3, hiddenSpawnTransform.position, Quaternion.identity);
+                
                 break;
             
             case 10:
                 Instantiate(greenDice4, hiddenSpawnTransform.position, Quaternion.identity);
+                
                 break;
             
             case 11:
                 Instantiate(greenDice5, hiddenSpawnTransform.position, Quaternion.identity);
+                hiddenDiceTranform = hiddenDice.transform;
                 break;
             
             case 12:
                 Instantiate(greenDice6, hiddenSpawnTransform.position, Quaternion.identity);
+                hiddenDiceTranform = hiddenDice.transform;
                 break;
         }
     }

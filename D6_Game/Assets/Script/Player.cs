@@ -25,10 +25,10 @@ public class Player : MonoBehaviour
 
    private string currentColor;
    private int currentNumberValue;
+   
+   
 
-   private GameObject currentDice;
-
-   private GameObject diceToDestroy;
+  
 
    private void Start()
    {
@@ -62,29 +62,41 @@ public class Player : MonoBehaviour
             
             //////////////////////// move the dice from the grid into focus for the first time////////////////////////
             
-            if (hit.collider.CompareTag("DiceObject") && diceFocusPos.focusDiceOccupy == false)
+            if (hit.collider.CompareTag("DiceObject") && 
+                diceFocusPos.focusDiceOccupy == false && 
+                hit.transform.GetComponent<DiceObject>().diceIsFocused == false)
             {
                Debug.Log("Hit something : " + hit.collider.name);
                // moving the dice into focus
 
+               // move the dice into focus
                hit.transform.position = Vector2.MoveTowards(hit.transform.position, focusDiceTransform.position,
                   diceFocusMoveSpeed * Time.fixedDeltaTime);
 
                Debug.Log("Move dice into focus");
 
+               // set the focus to occupy
                Invoke("FocusIsOccupy", 0.5f);
                
+               // set the tag of the clicked dice to focusDice
                hit.transform.tag = "FocusDice";
+
+               // set the bool value of clicked dice to true
+               hit.transform.GetComponent<DiceObject>().CallDiceIsNowFocused();
                
+               // player receive one score
                PlayerReceiveScore();
                
+               // player receive one chain
                chainActivate = true;
 
+               // if player run to this loop again they will get another chain point
                if (chainActivate == true)
                {
                   PlayerReceiveChainPoint();
                }
-
+               
+               // set the color and number value of the clicked dice into current value
                currentColor = hit.transform.GetComponent<DiceObject>().diceColor; 
                currentNumberValue = hit.transform.GetComponent<DiceObject>().diceNumberValue;
                
@@ -100,41 +112,64 @@ public class Player : MonoBehaviour
             
             /////////////////// If there is already a dice in the focus section ////////////////////
 
-            if (hit.collider.CompareTag("DiceObject") && diceFocusPos.focusDiceOccupy == true && 
-                currentNumberValue + 1 == hit.transform.GetComponent<DiceObject>().diceNumberValue)
-            {
+            if (
                
+               (hit.collider.CompareTag("DiceObject") && 
+                diceFocusPos.focusDiceOccupy == true && 
+                currentNumberValue + 1 == hit.transform.GetComponent<DiceObject>().diceNumberValue)
+               
+               ||
+               
+               (hit.collider.CompareTag("DiceObject") && 
+                 diceFocusPos.focusDiceOccupy == true && 
+                 currentColor == hit.transform.GetComponent<DiceObject>().diceColor)
+               
+               )
+            {
+               MoveDiceToDiscard();
 
                // move new dice into focus
-               hit.transform.position = Vector2.MoveTowards(hit.transform.position, focusDiceTransform.position,
+               hit.transform.position = Vector2.MoveTowards
+               (hit.transform.position, focusDiceTransform.position,
                   diceFocusMoveSpeed * Time.fixedDeltaTime);
                
+               // set the dice with focus tag
                hit.transform.tag = "FocusDice";
                
+               // set the occupy state to true
                Invoke("FocusIsOccupy", 0.5f);
                
+               // player receive one score
                PlayerReceiveScore();
                
+               // chain is activated
                chainActivate = true;
 
+               // player receive one chain point
                if (chainActivate == true)
                {
                   PlayerReceiveChainPoint();
                }
 
+               // continue to set current value of color and number from the clicked dice
                currentColor = hit.transform.GetComponent<DiceObject>().diceColor; 
                currentNumberValue = hit.transform.GetComponent<DiceObject>().diceNumberValue;
                
                print(currentColor);
                print(currentNumberValue);
-
+               
+               // set the bool value of clicked dice to true
+               hit.transform.GetComponent<DiceObject>().CallDiceIsNowFocused();
             }
 
 
             //////////////////////// removing the focus dice and decrease player's health /////////////////////////////
             
-            if (hit.collider.CompareTag("FocusDice") && diceFocusPos.focusDiceOccupy == true)
+            if (hit.collider.CompareTag("FocusDice") && 
+                diceFocusPos.focusDiceOccupy == true &&
+                hit.transform.GetComponent<DiceObject>().diceIsFocused == true)
             {
+               // decrease player's health by one
                DecreasePlayerHealth();
                
                // removing the focus dice
@@ -142,13 +177,29 @@ public class Player : MonoBehaviour
                   Vector2.Lerp(hit.transform.position, removeDiceTransform.position, diceFocusMoveSpeed * Time.deltaTime);
                Debug.Log("Removing dice");
                
+               // set the occupy state to false
                Invoke("FocusIsNotOccupy", 0.5f);
                
+               // set chain state to false and reset the chain score
                chainActivate = false;
                ChainPointReset();
+               
+               MoveDiceToDiscard();
             }
          }
 
+      }
+   }
+
+   private void MoveDiceToDiscard()
+   {
+      GameObject[] diceToDiscard; 
+      diceToDiscard = GameObject.FindGameObjectsWithTag("FocusDice");
+      foreach (GameObject dice in diceToDiscard)
+      {
+         dice.transform.position = Vector2.Lerp
+            (dice.transform.position, removeDiceTransform.position, diceFocusMoveSpeed * Time.deltaTime);
+         print("Dice are discarded");
       }
    }
 
@@ -201,6 +252,11 @@ public class Player : MonoBehaviour
       if (Input.GetKeyUp(KeyCode.R))
       {
          SceneManager.LoadScene("GameScene");
+         ScoreCounter.scoreValue = 0;
+         ChainCounter.chainValue = 0;
+         playerHealth = 6;
+         
+         progressBar.ResetBar();
       }
    }
    

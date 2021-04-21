@@ -32,4 +32,9 @@ public class ProgressBar : MonoBehaviour
     {
         targetProgress = slider.value + newProgress;
     }
+
+    public void ResetBar()
+    {
+        slider.value = 0;
+    }
 }
