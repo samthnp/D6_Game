@@ -2915,3 +2915,835 @@ System memory in use after: 89.2 MB.
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2643.
 Total: 2.708600 ms (FindLiveObjects: 0.294200 ms CreateObjectMapping: 0.126900 ms MarkObjects: 2.157100 ms  DeleteObjects: 0.129700 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 1871.656789 seconds.
+  path: Assets/Animation/Blue dice 1.controller
+  artifactKey: Guid(9bfdcfb2225f53746b89090b54007e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Blue dice 1.controller using Guid(9bfdcfb2225f53746b89090b54007e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abb817837063141aaae9502cf3c0e6ca') in 0.018111 seconds
+  Import took 0.022307 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.021784 seconds.
+  path: Assets/Animation/Blue dice 1.controller
+  artifactKey: Guid(9bfdcfb2225f53746b89090b54007e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Blue dice 1.controller using Guid(9bfdcfb2225f53746b89090b54007e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abb817837063141aaae9502cf3c0e6ca') in 0.003430 seconds
+  Import took 0.006819 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.018056 seconds.
+  path: Assets/Animation
+  artifactKey: Guid(97766efc4fd94de4c99fc7bb442991af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation using Guid(97766efc4fd94de4c99fc7bb442991af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b3f48dd5f91b13b6355e6adf9d3384a') in 0.003089 seconds
+  Import took 0.007071 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.184310 seconds.
+  path: Assets/Animation/idle.anim
+  artifactKey: Guid(4d7c6612772a55b408729d5d29cea19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/idle.anim using Guid(4d7c6612772a55b408729d5d29cea19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acf774734665dd37fe0609a6ac4a82f0') in 0.007214 seconds
+  Import took 0.010500 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022930 seconds.
+  path: Assets/Animation/idle.anim
+  artifactKey: Guid(4d7c6612772a55b408729d5d29cea19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/idle.anim using Guid(4d7c6612772a55b408729d5d29cea19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acf774734665dd37fe0609a6ac4a82f0') in 0.003544 seconds
+  Import took 0.007337 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 53.623916 seconds.
+  path: Assets/Animation/Shake.anim
+  artifactKey: Guid(4d7c6612772a55b408729d5d29cea19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Shake.anim using Guid(4d7c6612772a55b408729d5d29cea19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b194e0b66dccb01897ea1d88f30201b') in 0.003627 seconds
+  Import took 0.007075 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 92.479405 seconds.
+  path: Assets/Animation/Blue dice 1.controller
+  artifactKey: Guid(9bfdcfb2225f53746b89090b54007e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Blue dice 1.controller using Guid(9bfdcfb2225f53746b89090b54007e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '712bad56a8d04780767b12305bf16a79') in 0.005029 seconds
+  Import took 0.008981 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001515 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.951 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1812 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.2 MB.
+System memory in use after: 89.2 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2647.
+Total: 2.553900 ms (FindLiveObjects: 0.313100 ms CreateObjectMapping: 0.061900 ms MarkObjects: 2.028100 ms  DeleteObjects: 0.149900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001829 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.971 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1812 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.2 MB.
+System memory in use after: 89.2 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2651.
+Total: 3.978500 ms (FindLiveObjects: 0.454800 ms CreateObjectMapping: 0.157900 ms MarkObjects: 3.143200 ms  DeleteObjects: 0.215200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 116.703953 seconds.
+  path: Assets/Prefab/Blue dice 1.prefab
+  artifactKey: Guid(ae3e4b785ad7c6a4aaeb968975bc7d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Blue dice 1.prefab using Guid(ae3e4b785ad7c6a4aaeb968975bc7d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '820b27f0ba636275b19e6f459d72cbff') in 0.061307 seconds
+  Import took 0.065347 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Prefab/brown dice 5.prefab
+  artifactKey: Guid(642ca54f528bc0a449dac9b89df39e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/brown dice 5.prefab using Guid(642ca54f528bc0a449dac9b89df39e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93adaea6fa855538fb7eeaba1aaabecf') in 0.010493 seconds
+  Import took 0.013457 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Prefab/brown dice 4.prefab
+  artifactKey: Guid(0854eb2fe35ef964ca25b130b0c32e03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/brown dice 4.prefab using Guid(0854eb2fe35ef964ca25b130b0c32e03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3db2f37b268ebb44333504caaa2ae710') in 0.010986 seconds
+  Import took 0.014157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Prefab/green dice 5.prefab
+  artifactKey: Guid(147242e712eb75947ba52b4993a2ce72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/green dice 5.prefab using Guid(147242e712eb75947ba52b4993a2ce72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c89c7753c8de63ba8d9e3132510227e8') in 0.010917 seconds
+  Import took 0.014013 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Prefab/grey dice 5.prefab
+  artifactKey: Guid(b24b33ee200bba6418eab3203e2dbe1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/grey dice 5.prefab using Guid(b24b33ee200bba6418eab3203e2dbe1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24d56711cd731ec4ef106f3d99fa1d79') in 0.011329 seconds
+  Import took 0.014757 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Prefab/green dice 2.prefab
+  artifactKey: Guid(a91b9e102df69924db9dda87bc4658ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/green dice 2.prefab using Guid(a91b9e102df69924db9dda87bc4658ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae12a145ac8fd665d71c71c68e589f97') in 0.010941 seconds
+  Import took 0.014220 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Prefab/brown dice 1.prefab
+  artifactKey: Guid(7f5cac894cd46ac48b396514c3181d16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/brown dice 1.prefab using Guid(7f5cac894cd46ac48b396514c3181d16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec308aa0e4826395a1ee13961e45974f') in 0.010242 seconds
+  Import took 0.013726 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/Prefab/grey dice 1.prefab
+  artifactKey: Guid(c87935c939239b14fb3b1f9969687748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/grey dice 1.prefab using Guid(c87935c939239b14fb3b1f9969687748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb4cdd35577bfe5826136e0b0968743c') in 0.011632 seconds
+  Import took 0.015091 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Prefab/grey dice 6.prefab
+  artifactKey: Guid(80cf9dca79745674db818a9cea801c6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/grey dice 6.prefab using Guid(80cf9dca79745674db818a9cea801c6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccbc29a5ca0503a4cedd1bd3eed6864c') in 0.011868 seconds
+  Import took 0.014966 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Prefab/blue dice 3.prefab
+  artifactKey: Guid(200503c54448d2440b5215f53b141deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/blue dice 3.prefab using Guid(200503c54448d2440b5215f53b141deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf453e8e1c8aa4dd8f7bcabbc15b52e1') in 0.012607 seconds
+  Import took 0.016752 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000557 seconds.
+  path: Assets/Prefab/purple dice 3.prefab
+  artifactKey: Guid(7eb121d4a456d0848863686bf6b1811b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/purple dice 3.prefab using Guid(7eb121d4a456d0848863686bf6b1811b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11d383612a2514ab1e253a9451ce4d34') in 0.015173 seconds
+  Import took 0.020776 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000412 seconds.
+  path: Assets/Prefab/brown dice 6.prefab
+  artifactKey: Guid(2e046bda7430daa41bc1c6d77bec4e0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/brown dice 6.prefab using Guid(2e046bda7430daa41bc1c6d77bec4e0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcc8df29aed703d17e71dc7a1ca75931') in 0.011321 seconds
+  Import took 0.014751 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Prefab/blue dice 5.prefab
+  artifactKey: Guid(27793d214c2319644957f617caa37bdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/blue dice 5.prefab using Guid(27793d214c2319644957f617caa37bdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a47ca8e2ddb652a034255b10c89bdd7b') in 0.009758 seconds
+  Import took 0.012886 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Prefab/brown dice 3.prefab
+  artifactKey: Guid(797468b99bcd15d4cac21c72fa9fb0f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/brown dice 3.prefab using Guid(797468b99bcd15d4cac21c72fa9fb0f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '725f7cde244775913bfd1d2ad1d9c2ed') in 0.010327 seconds
+  Import took 0.013501 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Prefab/purple dice 4.prefab
+  artifactKey: Guid(67939c5492db2544c901a556d0060912) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/purple dice 4.prefab using Guid(67939c5492db2544c901a556d0060912) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd45902ac281a6308f7388884086c3f8c') in 0.010504 seconds
+  Import took 0.013628 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Prefab/blue dice 4.prefab
+  artifactKey: Guid(e095474dd45c0114b979f27c787844dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/blue dice 4.prefab using Guid(e095474dd45c0114b979f27c787844dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a99bc96336537bbfead13afe891e0d53') in 0.009436 seconds
+  Import took 0.012668 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Prefab/green dice 4.prefab
+  artifactKey: Guid(ddcbb200da4c4f14c93ef79e6e9dd16e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/green dice 4.prefab using Guid(ddcbb200da4c4f14c93ef79e6e9dd16e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f21ae010c153fa067498e71bf0c225aa') in 0.010012 seconds
+  Import took 0.013215 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Prefab/blue dice 6.prefab
+  artifactKey: Guid(4f2d229d461511144a019f1bb93cd27c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/blue dice 6.prefab using Guid(4f2d229d461511144a019f1bb93cd27c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc3aa2f35c418dae9afed3545bd302b7') in 0.009389 seconds
+  Import took 0.012715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Prefab/purple dice 6.prefab
+  artifactKey: Guid(8aa1065f2b0f6be469aa33a12ab6befc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/purple dice 6.prefab using Guid(8aa1065f2b0f6be469aa33a12ab6befc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60a289cacae338c48d575688aa0c5855') in 0.010045 seconds
+  Import took 0.013864 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Prefab/purple dice 5.prefab
+  artifactKey: Guid(926fff932a6180247bfe612e2c834273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/purple dice 5.prefab using Guid(926fff932a6180247bfe612e2c834273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd66b05b17894aecf9a9f90c12d39110b') in 0.010040 seconds
+  Import took 0.013918 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/Prefab/brown dice 2.prefab
+  artifactKey: Guid(66e26f3310245af43a12614468078bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/brown dice 2.prefab using Guid(66e26f3310245af43a12614468078bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01a56c7a8cebb762609947c619cf4153') in 0.011081 seconds
+  Import took 0.014441 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Prefab/grey dice 4.prefab
+  artifactKey: Guid(6ad91f0de26d21842bcd63f16c98e96a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/grey dice 4.prefab using Guid(6ad91f0de26d21842bcd63f16c98e96a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34515995b426996f0ba179b75f3bb5f4') in 0.010200 seconds
+  Import took 0.013326 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Prefab/grey dice 2.prefab
+  artifactKey: Guid(6d496125062cbd1458aab777c2409d8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/grey dice 2.prefab using Guid(6d496125062cbd1458aab777c2409d8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4253a53fc11d645fd81e13088f9dd21a') in 0.011136 seconds
+  Import took 0.014384 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Prefab/green dice 6.prefab
+  artifactKey: Guid(db9f064eb6b0a4646b6876dc35f8eb6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/green dice 6.prefab using Guid(db9f064eb6b0a4646b6876dc35f8eb6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ccfa99e089d1f2a3893f97c271995de') in 0.010465 seconds
+  Import took 0.013587 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000359 seconds.
+  path: Assets/Prefab/purple dice 2.prefab
+  artifactKey: Guid(fa14813d74e24fa46b7c8dd357ff38c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/purple dice 2.prefab using Guid(fa14813d74e24fa46b7c8dd357ff38c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9c8fa10fb4e5de5240ce0001890644f') in 0.011381 seconds
+  Import took 0.014610 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Prefab/green dice 1.prefab
+  artifactKey: Guid(e8db935f89965294392adb447c7ace83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/green dice 1.prefab using Guid(e8db935f89965294392adb447c7ace83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95b1aaafac5d97738c96ab46a67b3593') in 0.011952 seconds
+  Import took 0.015256 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/Prefab/green dice 3.prefab
+  artifactKey: Guid(c37eeea3639464341b584ccd6258e0cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/green dice 3.prefab using Guid(c37eeea3639464341b584ccd6258e0cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eb821ed46120f0d46fa289d8b37957a') in 0.010998 seconds
+  Import took 0.014589 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Prefab/purple dice 1.prefab
+  artifactKey: Guid(796e8b4a97626de428c84a1d188f64d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/purple dice 1.prefab using Guid(796e8b4a97626de428c84a1d188f64d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '184d087722d151c0fd9ea09ce6ded6b5') in 0.011102 seconds
+  Import took 0.015156 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Prefab/blue dice 2.prefab
+  artifactKey: Guid(835d79f75b15cca43b6613683a6ee89b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/blue dice 2.prefab using Guid(835d79f75b15cca43b6613683a6ee89b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9059b0e62ff5c46db57275e6606ecef1') in 0.011233 seconds
+  Import took 0.014516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Prefab/grey dice 3.prefab
+  artifactKey: Guid(8a92614ee19c58747b9797c0d764284f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/grey dice 3.prefab using Guid(8a92614ee19c58747b9797c0d764284f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df35c5ed63000310e15eea913e043a0f') in 0.010707 seconds
+  Import took 0.013805 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.481426 seconds.
+  path: Assets/Prefab/Blue dice 1.prefab
+  artifactKey: Guid(ae3e4b785ad7c6a4aaeb968975bc7d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Blue dice 1.prefab using Guid(ae3e4b785ad7c6a4aaeb968975bc7d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecbe5c71d67fd2227d4f25f0f31dbb84') in 0.011474 seconds
+  Import took 0.015326 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.031900 seconds.
+  path: Assets/Prefab/Blue dice 1.prefab
+  artifactKey: Guid(ae3e4b785ad7c6a4aaeb968975bc7d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Blue dice 1.prefab using Guid(ae3e4b785ad7c6a4aaeb968975bc7d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecbe5c71d67fd2227d4f25f0f31dbb84') in 0.010830 seconds
+  Import took 0.014440 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Prefab/brown dice 5.prefab
+  artifactKey: Guid(642ca54f528bc0a449dac9b89df39e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/brown dice 5.prefab using Guid(642ca54f528bc0a449dac9b89df39e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72bbbebaf979dbe39dd59822679dd7aa') in 0.011650 seconds
+  Import took 0.015235 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/Prefab/brown dice 4.prefab
+  artifactKey: Guid(0854eb2fe35ef964ca25b130b0c32e03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/brown dice 4.prefab using Guid(0854eb2fe35ef964ca25b130b0c32e03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edbaee3e67c5ede70617bed587f3bdb1') in 0.010361 seconds
+  Import took 0.013392 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Prefab/green dice 5.prefab
+  artifactKey: Guid(147242e712eb75947ba52b4993a2ce72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/green dice 5.prefab using Guid(147242e712eb75947ba52b4993a2ce72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '935b87076f273922a9bc09b9da2eebfe') in 0.010075 seconds
+  Import took 0.013384 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Prefab/grey dice 5.prefab
+  artifactKey: Guid(b24b33ee200bba6418eab3203e2dbe1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/grey dice 5.prefab using Guid(b24b33ee200bba6418eab3203e2dbe1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a51fb01ac96a6b4bd4eee52ed4c4d3d') in 0.011221 seconds
+  Import took 0.014905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Prefab/green dice 2.prefab
+  artifactKey: Guid(a91b9e102df69924db9dda87bc4658ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/green dice 2.prefab using Guid(a91b9e102df69924db9dda87bc4658ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56bd0ab168187c3a9a343ad5faaf59e3') in 0.010437 seconds
+  Import took 0.013643 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Prefab/brown dice 1.prefab
+  artifactKey: Guid(7f5cac894cd46ac48b396514c3181d16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/brown dice 1.prefab using Guid(7f5cac894cd46ac48b396514c3181d16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3799668a31eb04321924e402db1cb271') in 0.010237 seconds
+  Import took 0.013821 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000404 seconds.
+  path: Assets/Prefab/grey dice 1.prefab
+  artifactKey: Guid(c87935c939239b14fb3b1f9969687748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/grey dice 1.prefab using Guid(c87935c939239b14fb3b1f9969687748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f921f58e0e4029b57ebac24546b16c3') in 0.011236 seconds
+  Import took 0.014769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Prefab/grey dice 6.prefab
+  artifactKey: Guid(80cf9dca79745674db818a9cea801c6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/grey dice 6.prefab using Guid(80cf9dca79745674db818a9cea801c6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aef27a275412239a65628932d91cfbe') in 0.009679 seconds
+  Import took 0.012710 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Prefab/blue dice 3.prefab
+  artifactKey: Guid(200503c54448d2440b5215f53b141deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/blue dice 3.prefab using Guid(200503c54448d2440b5215f53b141deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ac31a7103b7622d47cc4df551225bc4') in 0.010165 seconds
+  Import took 0.013281 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/Prefab/purple dice 3.prefab
+  artifactKey: Guid(7eb121d4a456d0848863686bf6b1811b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/purple dice 3.prefab using Guid(7eb121d4a456d0848863686bf6b1811b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7db9ccdab9c406c796e859439cbef2c1') in 0.011302 seconds
+  Import took 0.014419 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Prefab/brown dice 6.prefab
+  artifactKey: Guid(2e046bda7430daa41bc1c6d77bec4e0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/brown dice 6.prefab using Guid(2e046bda7430daa41bc1c6d77bec4e0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '861089a783071d327cef4ac9c98bfbe2') in 0.010787 seconds
+  Import took 0.013853 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Prefab/blue dice 5.prefab
+  artifactKey: Guid(27793d214c2319644957f617caa37bdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/blue dice 5.prefab using Guid(27793d214c2319644957f617caa37bdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '957acb2f9a120ceb2089f533ab0fb4ff') in 0.009643 seconds
+  Import took 0.012428 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Prefab/brown dice 3.prefab
+  artifactKey: Guid(797468b99bcd15d4cac21c72fa9fb0f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/brown dice 3.prefab using Guid(797468b99bcd15d4cac21c72fa9fb0f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3eaaf7653f9a35ac38e054a7c461296') in 0.009631 seconds
+  Import took 0.012396 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/Prefab/purple dice 4.prefab
+  artifactKey: Guid(67939c5492db2544c901a556d0060912) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/purple dice 4.prefab using Guid(67939c5492db2544c901a556d0060912) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb12ce5dafcd811b9a1e88c6bbf0dd0a') in 0.009604 seconds
+  Import took 0.012753 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Prefab/blue dice 4.prefab
+  artifactKey: Guid(e095474dd45c0114b979f27c787844dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/blue dice 4.prefab using Guid(e095474dd45c0114b979f27c787844dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8a5e50e1b21a63e399673c8275ee2d3') in 0.010565 seconds
+  Import took 0.014086 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Prefab/green dice 4.prefab
+  artifactKey: Guid(ddcbb200da4c4f14c93ef79e6e9dd16e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/green dice 4.prefab using Guid(ddcbb200da4c4f14c93ef79e6e9dd16e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60dcc830868d1d01b8dd3babef4d1650') in 0.011154 seconds
+  Import took 0.014212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Prefab/blue dice 6.prefab
+  artifactKey: Guid(4f2d229d461511144a019f1bb93cd27c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/blue dice 6.prefab using Guid(4f2d229d461511144a019f1bb93cd27c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b23fb3729d339854aefa0f6eed9dbf87') in 0.055682 seconds
+  Import took 0.058695 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Prefab/purple dice 6.prefab
+  artifactKey: Guid(8aa1065f2b0f6be469aa33a12ab6befc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/purple dice 6.prefab using Guid(8aa1065f2b0f6be469aa33a12ab6befc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65d50b5cc6cf144cbcf324e088825b3f') in 0.009720 seconds
+  Import took 0.012702 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Prefab/purple dice 5.prefab
+  artifactKey: Guid(926fff932a6180247bfe612e2c834273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/purple dice 5.prefab using Guid(926fff932a6180247bfe612e2c834273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47abf5bb8683fd4a47657a14883a32e3') in 0.010972 seconds
+  Import took 0.014062 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000360 seconds.
+  path: Assets/Prefab/brown dice 2.prefab
+  artifactKey: Guid(66e26f3310245af43a12614468078bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/brown dice 2.prefab using Guid(66e26f3310245af43a12614468078bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e9dd5517aea3bd72e8f5329d5acaec7') in 0.010954 seconds
+  Import took 0.014646 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Prefab/grey dice 4.prefab
+  artifactKey: Guid(6ad91f0de26d21842bcd63f16c98e96a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/grey dice 4.prefab using Guid(6ad91f0de26d21842bcd63f16c98e96a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '723b751f45b28440a5504512b1752320') in 0.010373 seconds
+  Import took 0.013988 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Prefab/grey dice 2.prefab
+  artifactKey: Guid(6d496125062cbd1458aab777c2409d8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/grey dice 2.prefab using Guid(6d496125062cbd1458aab777c2409d8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f19622eb8b9787ac50c20fb585537ef5') in 0.009810 seconds
+  Import took 0.012879 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Prefab/green dice 6.prefab
+  artifactKey: Guid(db9f064eb6b0a4646b6876dc35f8eb6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/green dice 6.prefab using Guid(db9f064eb6b0a4646b6876dc35f8eb6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8758bb3fb4f5bd7c1db9a1f829d9592') in 0.010253 seconds
+  Import took 0.013263 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Prefab/purple dice 2.prefab
+  artifactKey: Guid(fa14813d74e24fa46b7c8dd357ff38c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/purple dice 2.prefab using Guid(fa14813d74e24fa46b7c8dd357ff38c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b3f1ca415440102e1cfde2270679f48') in 0.009066 seconds
+  Import took 0.011972 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Prefab/green dice 1.prefab
+  artifactKey: Guid(e8db935f89965294392adb447c7ace83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/green dice 1.prefab using Guid(e8db935f89965294392adb447c7ace83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '406251f630d3c3da60dcf7aa2cae52c5') in 0.010976 seconds
+  Import took 0.014219 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Prefab/green dice 3.prefab
+  artifactKey: Guid(c37eeea3639464341b584ccd6258e0cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/green dice 3.prefab using Guid(c37eeea3639464341b584ccd6258e0cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1f81c3d111f9e52658abb3d39d05903') in 0.010857 seconds
+  Import took 0.014056 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Prefab/purple dice 1.prefab
+  artifactKey: Guid(796e8b4a97626de428c84a1d188f64d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/purple dice 1.prefab using Guid(796e8b4a97626de428c84a1d188f64d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b9daa64a04fc9bdfc7f98285a9e086e') in 0.009610 seconds
+  Import took 0.012478 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Prefab/blue dice 2.prefab
+  artifactKey: Guid(835d79f75b15cca43b6613683a6ee89b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/blue dice 2.prefab using Guid(835d79f75b15cca43b6613683a6ee89b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd27bf7460f0d1c6cb62bf27b3bc5b97b') in 0.010406 seconds
+  Import took 0.013441 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Prefab/grey dice 3.prefab
+  artifactKey: Guid(8a92614ee19c58747b9797c0d764284f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/grey dice 3.prefab using Guid(8a92614ee19c58747b9797c0d764284f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '382baf3022f787eb45f17955e89feb1b') in 0.012549 seconds
+  Import took 0.016148 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 88.309770 seconds.
+  path: Assets/Prefab/Blue dice 1.prefab
+  artifactKey: Guid(ae3e4b785ad7c6a4aaeb968975bc7d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Blue dice 1.prefab using Guid(ae3e4b785ad7c6a4aaeb968975bc7d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Blue dice 1': Transition 'NotShake -> Shake' in state 'NotShake' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+ -> (artifact id: '0b221138ff9abd17cd77be1533cc8961') in 0.030635 seconds
+  Import took 0.034542 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001513 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.865 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1812 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.4 MB.
+System memory in use after: 89.4 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2656.
+Total: 2.418100 ms (FindLiveObjects: 0.288100 ms CreateObjectMapping: 0.061600 ms MarkObjects: 1.924900 ms  DeleteObjects: 0.142500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001609 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.869 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1812 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.4 MB.
+System memory in use after: 89.4 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2660.
+Total: 2.619000 ms (FindLiveObjects: 0.294200 ms CreateObjectMapping: 0.204500 ms MarkObjects: 1.988000 ms  DeleteObjects: 0.131700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 80.944424 seconds.
+  path: Assets/Prefab/Blue dice 1.prefab
+  artifactKey: Guid(ae3e4b785ad7c6a4aaeb968975bc7d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Blue dice 1.prefab using Guid(ae3e4b785ad7c6a4aaeb968975bc7d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Blue dice 1': Transition 'NotShake -> Shake' in state 'NotShake' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+ -> (artifact id: '52acd40ffa1454d68be2d97b1e9766e7') in 0.058793 seconds
+  Import took 0.062408 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001515 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.893 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1812 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.5 MB.
+System memory in use after: 89.5 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2665.
+Total: 2.592700 ms (FindLiveObjects: 0.228200 ms CreateObjectMapping: 0.059800 ms MarkObjects: 2.164300 ms  DeleteObjects: 0.139700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001649 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.884 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1812 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.4 MB.
+System memory in use after: 89.4 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2669.
+Total: 2.756400 ms (FindLiveObjects: 0.362100 ms CreateObjectMapping: 0.178200 ms MarkObjects: 2.086500 ms  DeleteObjects: 0.128500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001973 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.892 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1812 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.4 MB.
+System memory in use after: 89.4 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2673.
+Total: 2.395800 ms (FindLiveObjects: 0.385500 ms CreateObjectMapping: 0.059600 ms MarkObjects: 1.821700 ms  DeleteObjects: 0.127800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001500 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.927 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1812 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.4 MB.
+System memory in use after: 89.4 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2677.
+Total: 2.324600 ms (FindLiveObjects: 0.242400 ms CreateObjectMapping: 0.065100 ms MarkObjects: 1.901100 ms  DeleteObjects: 0.114400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001496 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.872 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1812 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.4 MB.
+System memory in use after: 89.4 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2681.
+Total: 2.692400 ms (FindLiveObjects: 0.250800 ms CreateObjectMapping: 0.122600 ms MarkObjects: 2.176500 ms  DeleteObjects: 0.141500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001656 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.046 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1812 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.4 MB.
+System memory in use after: 89.4 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2685.
+Total: 3.796700 ms (FindLiveObjects: 0.303200 ms CreateObjectMapping: 0.164200 ms MarkObjects: 3.144000 ms  DeleteObjects: 0.184100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 255.526897 seconds.
+  path: Assets/Prefab/NotShake.anim
+  artifactKey: Guid(d9f96465be3cf344ebcf5bc1653e1160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/NotShake.anim using Guid(d9f96465be3cf344ebcf5bc1653e1160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '038d1f63bf51827630d43326c6320c3d') in 0.013086 seconds
+  Import took 0.016604 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.868166 seconds.
+  path: Assets/Prefab/Shake.anim
+  artifactKey: Guid(4d7c6612772a55b408729d5d29cea19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Shake.anim using Guid(4d7c6612772a55b408729d5d29cea19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '683a097d804851411ea4da013cfca8a1') in 0.003827 seconds
+  Import took 0.007710 seconds .
+

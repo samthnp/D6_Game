@@ -260,7 +260,7 @@ public class Player : MonoBehaviour
                  diceFocusPos.focusDiceOccupy == true &&
                  diceExceptionTriggered != true))
             {
-               
+               hit.transform.GetComponent<DiceObject>().PlayDiceShake();
             }
          
 

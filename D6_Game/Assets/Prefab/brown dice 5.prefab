@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7264852009644384529}
   - component: {fileID: 1379410862710094142}
   - component: {fileID: -1376880163091517175}
+  - component: {fileID: 9100026461181990376}
   m_Layer: 0
   m_Name: brown dice 5
   m_TagString: DiceObject
@@ -125,3 +126,30 @@ MonoBehaviour:
   diceColor: brown
   diceNumberValue: 5
   diceIsFocused: 0
+  isColumn1: 0
+  isColumn2: 0
+  isColumn3: 0
+  isColumn4: 0
+  isColumn5: 0
+  diceGrid: {fileID: 0}
+  diceIsOutOfGrid: 0
+  diceAnimator: {fileID: 0}
+--- !u!95 &9100026461181990376
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5845365332140072604}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -22,6 +22,8 @@ public class DiceObject : MonoBehaviour
     public GameObject diceGrid;
 
     public bool diceIsOutOfGrid;
+
+    public Animator diceAnimator;
     
     private void Start()
     {
@@ -112,6 +114,12 @@ public class DiceObject : MonoBehaviour
     public void DiceIsNowFocused()
     {
         diceIsFocused = true;
+    }
+
+    public void PlayDiceShake()
+    {
+        diceAnimator.SetTrigger("TriggerShake");
+        print("Play Shake");
     }
 
 }
