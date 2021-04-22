@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class DiceObject : MonoBehaviour
 {
@@ -103,7 +104,6 @@ public class DiceObject : MonoBehaviour
             isColumn5 = false;
         }
     }
-
 
     public void CallDiceIsNowFocused()
     {

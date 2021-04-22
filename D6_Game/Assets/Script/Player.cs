@@ -261,9 +261,6 @@ public class Player : MonoBehaviour
                  diceExceptionTriggered != true))
             {
                
-               // shake the clicked dice
-               
-               
             }
          
 

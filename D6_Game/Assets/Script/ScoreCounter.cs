@@ -11,10 +11,11 @@ public class ScoreCounter : MonoBehaviour
     private void Start()
     {
         score = GetComponent<Text>();
+        score.GetComponent<Text>().color = Color.magenta;
     }
 
     private void Update()
     {
-        score.text = scoreValue + " / 50";
+        score.text = scoreValue + "/";
     }
 }

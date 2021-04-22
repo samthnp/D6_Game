@@ -11,10 +11,11 @@ public class ChainCounter : MonoBehaviour
     private void Start()
     {
         chain = GetComponent<Text>();
+        chain.GetComponent<Text>().color = Color.magenta;
     }
 
     private void Update()
     {
-        chain.text = chainValue + " CHAIN";
+        chain.text = chainValue + "";
     }
 }
