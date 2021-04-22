@@ -6,6 +6,9 @@ using Random = UnityEngine.Random;
 
 public class DiceGrid : MonoBehaviour
 {
+    // setting up references for all the position the dice will spawn in the grid system
+    // the grid system is a 5 column and 2 row grid
+    
     // 1st column
     public GameObject upperSpawner1;
     public GameObject lowerSpawner1;
@@ -31,14 +34,16 @@ public class DiceGrid : MonoBehaviour
     public GameObject lowerSpawner5;
 
 
-    // // // // //
-
+    // a variable of gameObject array for the dice to be spawn
+    // this array contain all the possible dice to be spawn, numbers and color variation included
     public GameObject[] diceToSpawn;
+    // a random int number to be selected in randomization
     private int randomInt;
 
+    // a boolean trigger when any slot on the grid is empty
     private bool emptyIsTrigger;
 
-    // Reference for each dice in the grid
+    // Reference for each dice in the grid as gameObject
     private GameObject upperDice1;
     private GameObject upperDice2;
     private GameObject upperDice3;
@@ -57,10 +62,12 @@ public class DiceGrid : MonoBehaviour
     private GameObject hiddenDice4;
     private GameObject hiddenDice5;
 
+    // the move speed of when the dice is rotating around in the grid
     public float diceMoveSpeed = 1000f;
 
     private void Start()
     {
+        // spawn all the dice in their locaiton
         ActivateUpperSpawner1();
         ActivateUpperSpawner2();
         ActivateUpperSpawner3();
@@ -74,9 +81,14 @@ public class DiceGrid : MonoBehaviour
         ActivateLowerSpawner5();
     }
 
+    // each activation function for specific points in the grid
+    
+    // this starts from upper-1 to upper-5 & from lower-1 to lower-5
     private void ActivateUpperSpawner1()
     {
+        // random an object to spawn from the array of all possible dice
         randomInt = Random.Range(0, diceToSpawn.Length);
+        // then instantiate the randomized dice into their position
         upperDice1 = Instantiate(diceToSpawn[randomInt], upperSpawner1.transform.position, Quaternion.identity);
 
     }
@@ -135,16 +147,22 @@ public class DiceGrid : MonoBehaviour
         lowerDice5 = Instantiate(diceToSpawn[randomInt], lowerSpawner5.transform.position, Quaternion.identity);
     }
 
-    //////////////// Dice Refill ////////////////
+    //////////////// Dice Refill System ////////////////
 
+    // when this function gets called, it will move the upper row to the lower row
+    // then the moved dice is removed so that when the newly moved dice is clicked again, it will run the loop
+    
+    // then an invoke is called to spawn a new dice in the upper column to refill the grid
     private void MoveUpper1ToLower1()
     {
+        // move the upper dice downward to replace the recently selected dice
         upperDice1.transform.position =
             Vector2.Lerp(upperDice1.transform.position, lowerSpawner1.transform.position,
                 diceMoveSpeed * Time.deltaTime);
 
         upperDice1.name = "lowerDice1";
 
+        // invoke some delay for the new dice to refill the upper row
         Invoke("ActivateUpperSpawner1", 0.5f);
         
         print("Move upper 1 to lower 1");
@@ -205,6 +223,11 @@ public class DiceGrid : MonoBehaviour
     ////// Condition Check //////
 
 
+    
+    // these functions gets called according to which columns they belong to when the players clicked on the dice
+    
+    // each function will run a test if the lower dice of that column is missing or not
+    // if it's missing, it will call the dice refill functions above and run the loop
     public void diceConditionCheck1()
     {
         if (lowerDice1 != null)

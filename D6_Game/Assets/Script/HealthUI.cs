@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class HealthUI : MonoBehaviour
 {
+    // get the reference to each child gameObject to manipulate their color on the spriteRenderer
     public GameObject circle1;
     public GameObject circle2;
     public GameObject circle3;
@@ -13,6 +14,8 @@ public class HealthUI : MonoBehaviour
 
     public Player player;
 
+    // the health UI system has 6 dots in the system
+    // each dot will turn into white when player lose 1 health point
     public void HealthUICheck()
     {
         if (player.playerHealth == 5)
