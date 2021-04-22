@@ -203,6 +203,11 @@ public class Player : MonoBehaviour
       }
    }
 
+   private void MoveUpperDiceToLowerDice()
+   {
+      
+   }
+
    private void FocusIsOccupy()
    {
       diceFocusPos.focusDiceOccupy = true;

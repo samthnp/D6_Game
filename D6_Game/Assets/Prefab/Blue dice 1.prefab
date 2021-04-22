@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5223672556686337925}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.9, y: 0.5, z: 0}
-  m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
+  m_LocalScale: {x: 0.12, y: 0.12, z: 0.04}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -125,6 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diceColor: blue
   diceNumberValue: 1
+  diceIsFocused: 0
 --- !u!114 &4928085763505998132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,3 +140,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diceColor: 
   diceNumberValue: 0
+  diceIsFocused: 0

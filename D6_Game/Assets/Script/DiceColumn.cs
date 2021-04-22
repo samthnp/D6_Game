@@ -21,9 +21,9 @@ public class DiceColumn : MonoBehaviour
     private GameObject lowerDice;
     private GameObject hiddenDice;
 
-    private Transform upperDiceTranform;
-    private Transform lowerDiceTranform;
-    private Transform hiddenDiceTranform;
+    private Transform upperDiceTransform;
+    private Transform lowerDiceTransform;
+    private Transform hiddenDiceTransform;
 
     public GameObject blueDice1;
     public GameObject blueDice2;
@@ -39,6 +39,12 @@ public class DiceColumn : MonoBehaviour
     public GameObject greenDice5;
     public GameObject greenDice6;
 
+    private bool isUpperDice = false;
+    private bool isLowerDice = false;
+    private bool isHiddenDice = false;
+
+    public float diceMovementSpeed;
+
     private void Start()
     {
         hiddenSpawnTransform = hiddenSpawner.transform;
@@ -50,6 +56,11 @@ public class DiceColumn : MonoBehaviour
         StartSpawnHiddenRow();
     }
 
+    private void Update()
+    {
+        testFunction();
+    }
+
     private void StartSpawnUpperRow()
     {
         whichDiceToSpawn = Random.Range(1, 12);
@@ -58,62 +69,62 @@ public class DiceColumn : MonoBehaviour
         {
             case 1:
                 upperDice = Instantiate(blueDice1, upperSpawnerTransform.position, Quaternion.identity);
-                
+                isUpperDice = true;
                 break;
             
             case 2:
-                Instantiate(blueDice2, upperSpawnerTransform.position, Quaternion.identity);
-                
+                upperDice = Instantiate(blueDice2, upperSpawnerTransform.position, Quaternion.identity);
+                isUpperDice = true;
                 break;
             
             case 3:
-                Instantiate(blueDice3, upperSpawnerTransform.position, Quaternion.identity);
-                
+                upperDice = Instantiate(blueDice3, upperSpawnerTransform.position, Quaternion.identity);
+                isUpperDice = true;
                 break;
             
             case 4:
-                Instantiate(blueDice4, upperSpawnerTransform.position, Quaternion.identity);
-                
+                upperDice = Instantiate(blueDice4, upperSpawnerTransform.position, Quaternion.identity);
+                isUpperDice = true;
                 break;
             
             case 5:
-                Instantiate(blueDice5, upperSpawnerTransform.position, Quaternion.identity);
-                
+                upperDice = Instantiate(blueDice5, upperSpawnerTransform.position, Quaternion.identity);
+                isUpperDice = true;
                 break;
             
             case 6:
-                Instantiate(blueDice6, upperSpawnerTransform.position, Quaternion.identity);
-                
+                upperDice = Instantiate(blueDice6, upperSpawnerTransform.position, Quaternion.identity);
+                isUpperDice = true;
                 break;
             
             case 7:
-                Instantiate(greenDice1, upperSpawnerTransform.position, Quaternion.identity);
-                
+                upperDice = Instantiate(greenDice1, upperSpawnerTransform.position, Quaternion.identity);
+                isUpperDice = true;
                 break;
             
             case 8:
-                Instantiate(greenDice2, upperSpawnerTransform.position, Quaternion.identity);
-                
+                upperDice = Instantiate(greenDice2, upperSpawnerTransform.position, Quaternion.identity);
+                isUpperDice = true;
                 break;
             
             case 9:
-                Instantiate(greenDice3, upperSpawnerTransform.position, Quaternion.identity);
-                
+                upperDice = Instantiate(greenDice3, upperSpawnerTransform.position, Quaternion.identity);
+                isUpperDice = true;
                 break;
             
             case 10:
-                Instantiate(greenDice4, upperSpawnerTransform.position, Quaternion.identity);
-                
+                upperDice = Instantiate(greenDice4, upperSpawnerTransform.position, Quaternion.identity);
+                isUpperDice = true;
                 break;
             
             case 11:
-                Instantiate(greenDice5, upperSpawnerTransform.position, Quaternion.identity);
-                
+                upperDice = Instantiate(greenDice5, upperSpawnerTransform.position, Quaternion.identity);
+                isUpperDice = true;
                 break;
             
             case 12:
-                Instantiate(greenDice6, upperSpawnerTransform.position, Quaternion.identity);
-                
+                upperDice = Instantiate(greenDice6, upperSpawnerTransform.position, Quaternion.identity);
+                isUpperDice = true;
                 break;
         }
     }
@@ -126,62 +137,62 @@ public class DiceColumn : MonoBehaviour
         {
             case 1:
                 Instantiate(blueDice1, lowerSpawnerTransform.position, Quaternion.identity);
-                
+                isLowerDice = true;
                 break;
             
             case 2:
                 Instantiate(blueDice2, lowerSpawnerTransform.position, Quaternion.identity);
-                
+                isLowerDice = true;
                 break;
             
             case 3:
                 Instantiate(blueDice3, lowerSpawnerTransform.position, Quaternion.identity);
-                
+                isLowerDice = true;
                 break;
             
             case 4:
                 Instantiate(blueDice4, lowerSpawnerTransform.position, Quaternion.identity);
-                
+                isLowerDice = true;
                 break;
             
             case 5:
                 Instantiate(blueDice5, lowerSpawnerTransform.position, Quaternion.identity);
-                
+                isLowerDice = true;
                 break;
             
             case 6:
                 Instantiate(blueDice6, lowerSpawnerTransform.position, Quaternion.identity);
-                
+                isLowerDice = true;
                 break;
             
             case 7:
                 Instantiate(greenDice1, lowerSpawnerTransform.position, Quaternion.identity);
-                
+                isLowerDice = true;
                 break;
             
             case 8:
                 Instantiate(greenDice2, lowerSpawnerTransform.position, Quaternion.identity);
-                
+                isLowerDice = true;
                 break;
             
             case 9:
                 Instantiate(greenDice3, lowerSpawnerTransform.position, Quaternion.identity);
-                
+                isLowerDice = true;
                 break;
             
             case 10:
                 Instantiate(greenDice4, lowerSpawnerTransform.position, Quaternion.identity);
-                
+                isLowerDice = true;
                 break;
             
             case 11:
                 Instantiate(greenDice5, lowerSpawnerTransform.position, Quaternion.identity);
-                
+                isLowerDice = true;
                 break;
             
             case 12:
                 Instantiate(greenDice6, lowerSpawnerTransform.position, Quaternion.identity);
-                
+                isLowerDice = true;
                 break;
         }
     }
@@ -194,63 +205,73 @@ public class DiceColumn : MonoBehaviour
         {
             case 1:
                 Instantiate(blueDice1, hiddenSpawnTransform.position, Quaternion.identity);
-                
+                isHiddenDice = true;
                 break;
             
             case 2:
                 Instantiate(blueDice2, hiddenSpawnTransform.position, Quaternion.identity);
-                
+                isHiddenDice = true;
                 break;
             
             case 3:
                 Instantiate(blueDice3, hiddenSpawnTransform.position, Quaternion.identity);
-                
+                isHiddenDice = true;
                 break;
             
             case 4:
                 Instantiate(blueDice4, hiddenSpawnTransform.position, Quaternion.identity);
-                
+                isHiddenDice = true;
                 break;
             
             case 5:
                 Instantiate(blueDice5, hiddenSpawnTransform.position, Quaternion.identity);
-                
+                isHiddenDice = true;
                 break;
             
             case 6:
                 Instantiate(blueDice6, hiddenSpawnTransform.position, Quaternion.identity);
-                
+                isHiddenDice = true;
                 break;
             
             case 7:
                 Instantiate(greenDice1, hiddenSpawnTransform.position, Quaternion.identity);
-                
+                isHiddenDice = true;
                 break;
             
             case 8:
                 Instantiate(greenDice2, hiddenSpawnTransform.position, Quaternion.identity);
-                
+                isHiddenDice = true;
                 break;
             
             case 9:
                 Instantiate(greenDice3, hiddenSpawnTransform.position, Quaternion.identity);
-                
+                isHiddenDice = true;
                 break;
             
             case 10:
                 Instantiate(greenDice4, hiddenSpawnTransform.position, Quaternion.identity);
-                
+                isHiddenDice = true;
                 break;
             
             case 11:
                 Instantiate(greenDice5, hiddenSpawnTransform.position, Quaternion.identity);
-                hiddenDiceTranform = hiddenDice.transform;
+                isHiddenDice = true;
                 break;
             
             case 12:
                 Instantiate(greenDice6, hiddenSpawnTransform.position, Quaternion.identity);
-                hiddenDiceTranform = hiddenDice.transform;
+                isHiddenDice = true;
                 break;
+        }
+    }
+
+    public void testFunction()
+    {
+        if (Input.GetKeyUp(KeyCode.Q))
+        {
+            upperDice.transform.position = 
+                Vector2.Lerp(upperDice.transform.position, lowerSpawnerTransform.position,
+                diceMovementSpeed * Time.deltaTime);
         }
     }
 
@@ -262,7 +283,7 @@ public class DiceColumn : MonoBehaviour
     
     public void MoveHiddenToUpper()
     {
-        Invoke("DoTheMovement", 0.5f);
+        Invoke("DoTheMovement", 0.25f);
     }
 
     public void DoTheMovement()
