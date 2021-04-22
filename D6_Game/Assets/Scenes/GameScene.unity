@@ -732,6 +732,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a96c883fb8cd8e54994a1264610dcbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  upperSpawner1: {fileID: 1903754153}
+  lowerSpawner1: {fileID: 1308707953}
+  hiddenSpawner1: {fileID: 1717324093}
+  upperSpawner2: {fileID: 1250418241}
+  lowerSpawner2: {fileID: 991154434}
+  hiddenSpawner2: {fileID: 853189882}
+  upperSpawner3: {fileID: 61306355}
+  lowerSpawner3: {fileID: 551580236}
+  hiddenSpawner3: {fileID: 86611497}
+  upperSpawner4: {fileID: 11631551}
+  lowerSpawner4: {fileID: 1464840699}
+  hiddenSpawner4: {fileID: 1678227163}
+  upperSpawner5: {fileID: 430910155}
+  lowerSpawner5: {fileID: 1713758943}
+  hiddenSpawner5: {fileID: 2046171235}
 --- !u!4 &593179744
 Transform:
   m_ObjectHideFlags: 0
@@ -2073,7 +2088,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2011209979}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -38.87, y: -4.14, z: -1.3563663}
+  m_LocalPosition: {x: -36.06, y: -4.34, z: -1.3563663}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1724462559}
@@ -2214,7 +2229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2976ffd6021e7d944b7bfa918cc562b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fillingSpeed: 0.5
+  fillingSpeed: 15
 --- !u!1001 &7093515372303334611
 PrefabInstance:
   m_ObjectHideFlags: 0

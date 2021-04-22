@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -63,4 +64,31 @@ public class DiceGrid : MonoBehaviour
     private Transform hiddenSpawn5Transform;
     
     private bool lowerSpawn5_Empty = false;
+
+    private void Start()
+    {
+        upperSpawn1Transform = upperSpawner1.transform;
+        lowerSpawn1Transform = lowerSpawner1.transform;
+        hiddenSpawn1Transform = hiddenSpawner1.transform;
+
+        upperSpawn2Transform = upperSpawner2.transform;
+        lowerSpawn2Transform = lowerSpawner2.transform;
+        hiddenSpawn2Transform = hiddenSpawner2.transform;
+
+        upperSpawn3Transform = upperSpawner3.transform;
+        lowerSpawn3Transform = lowerSpawner3.transform;
+        hiddenSpawn3Transform = hiddenSpawner3.transform;
+        
+        upperSpawn4Transform = upperSpawner4.transform;
+        lowerSpawn4Transform = lowerSpawner4.transform;
+        hiddenSpawn4Transform = hiddenSpawner4.transform;
+        
+        upperSpawn5Transform = upperSpawner5.transform;
+        lowerSpawn5Transform = lowerSpawner5.transform;
+        hiddenSpawn5Transform = hiddenSpawner5.transform;
+        
+
+    }
+    
+    private void Spawn
 }
