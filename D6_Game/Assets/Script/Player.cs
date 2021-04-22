@@ -27,8 +27,8 @@ public class Player : MonoBehaviour
    private int currentNumberValue;
 
    private bool diceExceptionTriggered = false;
-   
-  
+
+   public SoundManager soundManager;
 
    private void Start()
    {
@@ -259,13 +259,13 @@ public class Player : MonoBehaviour
                  diceFocusPos.focusDiceOccupy == true &&
                  diceExceptionTriggered != true))
             {
-               
+                  soundManager.playWrongConditionSound();
             }
          
 
 
 
-         // removing the focus dice and decrease player's health
+            // removing the focus dice and decrease player's health
             
             if (hit.collider.CompareTag("FocusDice") && 
                 diceFocusPos.focusDiceOccupy == true &&
@@ -281,6 +281,8 @@ public class Player : MonoBehaviour
                
                // set the occupy state to false
                Invoke("FocusIsNotOccupy", 0.5f);
+               
+               soundManager.playDiscardSound();
                
                // set chain state to false and reset the chain score
                chainActivate = false;
@@ -302,7 +304,7 @@ public class Player : MonoBehaviour
          dice.transform.position = Vector2.Lerp
             (dice.transform.position, removeDiceTransform.position, diceFocusMoveSpeed * Time.deltaTime);
 
-         // Invoke("DestroyDiscardDice", 10f);
+         Invoke("DestroyDiscardDice", 2f);
       }
    }
 
@@ -335,6 +337,7 @@ public class Player : MonoBehaviour
       
       // also fill in the progress on the progression bar
       progressBar.IncreaseProgress(1);
+      soundManager.playConditionMetSound1();
    }
 
    private void PlayerReceiveChainPoint()

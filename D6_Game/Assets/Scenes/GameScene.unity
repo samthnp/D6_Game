@@ -1551,7 +1551,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 10d970176bd2fb04494e686567131a43, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1648,6 +1648,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a0030602960e04e9addf5898450961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  conditionMetSound1: {fileID: 8300000, guid: 10d970176bd2fb04494e686567131a43, type: 3}
+  conditionMetSound2: {fileID: 8300000, guid: f7e00ed9dd1641745ab17c32a6b623de, type: 3}
+  conditionMetSound3: {fileID: 8300000, guid: d52bb04481ab2d046aa0a19434af8abb, type: 3}
+  conditionMetSound4: {fileID: 8300000, guid: 5502150b732a1304db74a427b5ea524c, type: 3}
+  conditionMetSound5: {fileID: 8300000, guid: 9b2e03d4b73ffa7428352d1c787786da, type: 3}
+  conditionMetSound6: {fileID: 8300000, guid: c6e3cc59b6d54bf49b586565a81b7dbe, type: 3}
+  wrongCondition: {fileID: 8300000, guid: 836eb2678b08c404995f196b85639f47, type: 3}
+  discardDice: {fileID: 8300000, guid: 66157edf9f8ed9d408868f2f722bbf4b, type: 3}
 --- !u!4 &1132865422
 Transform:
   m_ObjectHideFlags: 0
@@ -1673,7 +1681,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 836eb2678b08c404995f196b85639f47, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1769,7 +1777,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 66157edf9f8ed9d408868f2f722bbf4b, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1865,7 +1873,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c6e3cc59b6d54bf49b586565a81b7dbe, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1961,7 +1969,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9b2e03d4b73ffa7428352d1c787786da, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2057,7 +2065,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5502150b732a1304db74a427b5ea524c, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2153,7 +2161,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d52bb04481ab2d046aa0a19434af8abb, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2249,7 +2257,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f7e00ed9dd1641745ab17c32a6b623de, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -3424,6 +3432,10 @@ PrefabInstance:
       propertyPath: scoreCounter
       value: 
       objectReference: {fileID: 20883203}
+    - target: {fileID: 9099152141157927726, guid: 47a010307799c0044a8c99714bd7a527, type: 3}
+      propertyPath: soundManager
+      value: 
+      objectReference: {fileID: 1132865421}
     - target: {fileID: 9099152141157927726, guid: 47a010307799c0044a8c99714bd7a527, type: 3}
       propertyPath: diceFocusMoveSpeed
       value: 1000
