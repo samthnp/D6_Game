@@ -66,16 +66,15 @@ public class Player : MonoBehaviour
             {
                diceExceptionTriggered = true;
             }
-            
-            
+
+
             //////////////////////// move the dice from the grid into focus for the first time////////////////////////
-            
-            if (hit.collider.CompareTag("DiceObject") && 
-                diceFocusPos.focusDiceOccupy == false && 
+
+            if (hit.collider.CompareTag("DiceObject") &&
+                diceFocusPos.focusDiceOccupy == false &&
                 hit.transform.GetComponent<DiceObject>().diceIsFocused == false)
             {
                Debug.Log("Hit something : " + hit.collider.name);
-               // moving the dice into focus
 
                // move the dice into focus
                hit.transform.position = Vector2.MoveTowards(hit.transform.position, focusDiceTransform.position,
@@ -85,16 +84,16 @@ public class Player : MonoBehaviour
 
                // set the focus to occupy
                Invoke("FocusIsOccupy", 0.5f);
-               
+
                // set the tag of the clicked dice to focusDice
                hit.transform.tag = "FocusDice";
 
                // set the bool value of clicked dice to true
                hit.transform.GetComponent<DiceObject>().CallDiceIsNowFocused();
-               
+
                // player receive one score
                PlayerReceiveScore();
-               
+
                // player receive one chain
                chainActivate = true;
 
@@ -103,68 +102,74 @@ public class Player : MonoBehaviour
                {
                   PlayerReceiveChainPoint();
                }
-               
+
                // set the color and number value of the clicked dice into current value
-               currentColor = hit.transform.GetComponent<DiceObject>().diceColor; 
+               currentColor = hit.transform.GetComponent<DiceObject>().diceColor;
                currentNumberValue = hit.transform.GetComponent<DiceObject>().diceNumberValue;
-               
+
                print(currentColor);
                print(currentNumberValue);
-               
+
                diceGrid.diceConditionCheck1();
                diceGrid.diceConditionCheck2();
                diceGrid.diceConditionCheck3();
                diceGrid.diceConditionCheck4();
                diceGrid.diceConditionCheck5();
-               
+
+               hit.transform.GetComponent<DiceObject>().diceIsOutOfGrid = true;
+
                if (hit.transform.GetComponent<DiceObject>().isColumn1 == true)
                {
                   diceGrid.diceConditionCheck1();
+                  print("Check condition 1");
                }
-               
+
                if (hit.transform.GetComponent<DiceObject>().isColumn2 == true)
                {
                   diceGrid.diceConditionCheck2();
+                  print("Check condition 2");
                }
-               
+
                if (hit.transform.GetComponent<DiceObject>().isColumn3 == true)
                {
                   diceGrid.diceConditionCheck3();
+                  print("Check condition 3");
                }
-               
+
                if (hit.transform.GetComponent<DiceObject>().isColumn4 == true)
                {
                   diceGrid.diceConditionCheck4();
+                  print("Check condition 4");
                }
-               
+
                if (hit.transform.GetComponent<DiceObject>().isColumn5 == true)
                {
                   diceGrid.diceConditionCheck5();
+                  print("Check condition 5");
                }
-               
+
             }
-            
-            
-            
-            /////////////////// If there is already a dice in the focus section ////////////////////
+
+
+            // If there is already a dice in the focus section but the condition returns true 
 
             if (
-               
-               (hit.collider.CompareTag("DiceObject") && 
-                diceFocusPos.focusDiceOccupy == true && 
+
+               (hit.collider.CompareTag("DiceObject") &&
+                diceFocusPos.focusDiceOccupy == true &&
                 currentNumberValue + 1 == hit.transform.GetComponent<DiceObject>().diceNumberValue)
-               
+
                ||
-               
-               (hit.collider.CompareTag("DiceObject") && 
-                 diceFocusPos.focusDiceOccupy == true && 
-                 currentColor == hit.transform.GetComponent<DiceObject>().diceColor)
-               
+
+               (hit.collider.CompareTag("DiceObject") &&
+                diceFocusPos.focusDiceOccupy == true &&
+                currentColor == hit.transform.GetComponent<DiceObject>().diceColor)
+
                ||
-               
-                  (hit.collider.CompareTag("DiceObject") && 
-                   diceFocusPos.focusDiceOccupy == true && 
-                   diceExceptionTriggered == true))
+
+               (hit.collider.CompareTag("DiceObject") &&
+                diceFocusPos.focusDiceOccupy == true &&
+                diceExceptionTriggered == true))
             {
                MoveDiceToDiscard();
 
@@ -172,16 +177,16 @@ public class Player : MonoBehaviour
                hit.transform.position = Vector2.MoveTowards
                (hit.transform.position, focusDiceTransform.position,
                   diceFocusMoveSpeed * Time.fixedDeltaTime);
-               
+
                // set the dice with focus tag
                hit.transform.tag = "FocusDice";
-               
+
                // set the occupy state to true
                Invoke("FocusIsOccupy", 0.5f);
-               
+
                // player receive one score
                PlayerReceiveScore();
-               
+
                // chain is activated
                chainActivate = true;
 
@@ -192,47 +197,79 @@ public class Player : MonoBehaviour
                }
 
                // continue to set current value of color and number from the clicked dice
-               currentColor = hit.transform.GetComponent<DiceObject>().diceColor; 
+               currentColor = hit.transform.GetComponent<DiceObject>().diceColor;
                currentNumberValue = hit.transform.GetComponent<DiceObject>().diceNumberValue;
-               
+
                print(currentColor);
                print(currentNumberValue);
-               
 
                diceExceptionTriggered = false;
-               
+
                // set the bool value of clicked dice to true
                hit.transform.GetComponent<DiceObject>().CallDiceIsNowFocused();
+
+               hit.transform.GetComponent<DiceObject>().diceIsOutOfGrid = true;
 
                if (hit.transform.GetComponent<DiceObject>().isColumn1 == true)
                {
                   diceGrid.diceConditionCheck1();
+                  print("Check condition 1");
                }
-               
+
                if (hit.transform.GetComponent<DiceObject>().isColumn2 == true)
                {
                   diceGrid.diceConditionCheck2();
+                  print("Check condition 2");
                }
-               
+
                if (hit.transform.GetComponent<DiceObject>().isColumn3 == true)
                {
                   diceGrid.diceConditionCheck3();
+                  print("Check condition 3");
                }
-               
+
                if (hit.transform.GetComponent<DiceObject>().isColumn4 == true)
                {
                   diceGrid.diceConditionCheck4();
+                  print("Check condition 4");
                }
-               
+
                if (hit.transform.GetComponent<DiceObject>().isColumn5 == true)
                {
                   diceGrid.diceConditionCheck5();
+                  print("Check condition 5");
                }
-               
+
             }
 
+            // If there are already a dice in focus, but the condition return false
 
-            //////////////////////// removing the focus dice and decrease player's health /////////////////////////////
+            if ((hit.collider.CompareTag("DiceObject") &&
+                 diceFocusPos.focusDiceOccupy == true &&
+                 currentNumberValue + 1 != hit.transform.GetComponent<DiceObject>().diceNumberValue)
+
+                ||
+
+                (hit.collider.CompareTag("DiceObject") &&
+                 diceFocusPos.focusDiceOccupy == true &&
+                 currentColor != hit.transform.GetComponent<DiceObject>().diceColor)
+
+                ||
+
+                (hit.collider.CompareTag("DiceObject") &&
+                 diceFocusPos.focusDiceOccupy == true &&
+                 diceExceptionTriggered != true))
+            {
+               
+               // shake the clicked dice
+               
+               
+            }
+         
+
+
+
+         // removing the focus dice and decrease player's health
             
             if (hit.collider.CompareTag("FocusDice") && 
                 diceFocusPos.focusDiceOccupy == true &&
@@ -268,9 +305,8 @@ public class Player : MonoBehaviour
       {
          dice.transform.position = Vector2.Lerp
             (dice.transform.position, removeDiceTransform.position, diceFocusMoveSpeed * Time.deltaTime);
-         print("Dice are discarded");
-         
-         Invoke("DestroyDiscardDice", 0.5f);
+
+         // Invoke("DestroyDiscardDice", 10f);
       }
    }
 

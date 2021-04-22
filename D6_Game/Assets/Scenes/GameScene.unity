@@ -317,6 +317,10 @@ PrefabInstance:
       value: FocusTransform
       objectReference: {fileID: 0}
     - target: {fileID: 7567525944050168979, guid: 954ccb81858574d44b2f0ed89cefd396, type: 3}
+      propertyPath: m_Color.a
+      value: 0.12156863
+      objectReference: {fileID: 0}
+    - target: {fileID: 7567525944050168979, guid: 954ccb81858574d44b2f0ed89cefd396, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -828,6 +832,30 @@ MonoBehaviour:
   - {fileID: 331609098155829737, guid: e095474dd45c0114b979f27c787844dd, type: 3}
   - {fileID: 4948953088873923681, guid: 27793d214c2319644957f617caa37bdb, type: 3}
   - {fileID: 3403975678782141968, guid: 4f2d229d461511144a019f1bb93cd27c, type: 3}
+  - {fileID: 56579473721146052, guid: 7f5cac894cd46ac48b396514c3181d16, type: 3}
+  - {fileID: 7674719586423768848, guid: 66e26f3310245af43a12614468078bd9, type: 3}
+  - {fileID: 5120176747800489209, guid: 797468b99bcd15d4cac21c72fa9fb0f1, type: 3}
+  - {fileID: 4616063017453207117, guid: 0854eb2fe35ef964ca25b130b0c32e03, type: 3}
+  - {fileID: 5845365332140072604, guid: 642ca54f528bc0a449dac9b89df39e5e, type: 3}
+  - {fileID: 3063454324316771033, guid: 2e046bda7430daa41bc1c6d77bec4e0c, type: 3}
+  - {fileID: 56579473721146052, guid: e8db935f89965294392adb447c7ace83, type: 3}
+  - {fileID: 7674719586423768848, guid: a91b9e102df69924db9dda87bc4658ae, type: 3}
+  - {fileID: 5120176747800489209, guid: c37eeea3639464341b584ccd6258e0cb, type: 3}
+  - {fileID: 4616063017453207117, guid: ddcbb200da4c4f14c93ef79e6e9dd16e, type: 3}
+  - {fileID: 5845365332140072604, guid: 147242e712eb75947ba52b4993a2ce72, type: 3}
+  - {fileID: 3063454324316771033, guid: db9f064eb6b0a4646b6876dc35f8eb6c, type: 3}
+  - {fileID: 56579473721146052, guid: c87935c939239b14fb3b1f9969687748, type: 3}
+  - {fileID: 7674719586423768848, guid: 6d496125062cbd1458aab777c2409d8d, type: 3}
+  - {fileID: 5120176747800489209, guid: 8a92614ee19c58747b9797c0d764284f, type: 3}
+  - {fileID: 4616063017453207117, guid: 6ad91f0de26d21842bcd63f16c98e96a, type: 3}
+  - {fileID: 5845365332140072604, guid: b24b33ee200bba6418eab3203e2dbe1e, type: 3}
+  - {fileID: 3063454324316771033, guid: 80cf9dca79745674db818a9cea801c6b, type: 3}
+  - {fileID: 56579473721146052, guid: 796e8b4a97626de428c84a1d188f64d4, type: 3}
+  - {fileID: 7674719586423768848, guid: fa14813d74e24fa46b7c8dd357ff38c5, type: 3}
+  - {fileID: 5120176747800489209, guid: 7eb121d4a456d0848863686bf6b1811b, type: 3}
+  - {fileID: 4616063017453207117, guid: 67939c5492db2544c901a556d0060912, type: 3}
+  - {fileID: 5845365332140072604, guid: 926fff932a6180247bfe612e2c834273, type: 3}
+  - {fileID: 3063454324316771033, guid: 8aa1065f2b0f6be469aa33a12ab6befc, type: 3}
   diceMoveSpeed: 1000
 --- !u!4 &593179744
 Transform:

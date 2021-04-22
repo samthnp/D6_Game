@@ -78,6 +78,7 @@ public class DiceGrid : MonoBehaviour
     {
         randomInt = Random.Range(0, diceToSpawn.Length);
         upperDice1 = Instantiate(diceToSpawn[randomInt], upperSpawner1.transform.position, Quaternion.identity);
+
     }
 
     private void ActivateUpperSpawner2()
@@ -144,7 +145,7 @@ public class DiceGrid : MonoBehaviour
 
         upperDice1.name = "lowerDice1";
 
-        Invoke("ActivateUpperSpawner1", 0.25f);
+        Invoke("ActivateUpperSpawner1", 0.5f);
     }
 
     private void MoveUpper2ToLower2()
@@ -155,7 +156,7 @@ public class DiceGrid : MonoBehaviour
 
         upperDice2.name = "lowerDice2";
         
-        Invoke("ActivateUpperSpawner2", 0.25f);
+        Invoke("ActivateUpperSpawner2", 0.5f);
     }
 
     private void MoveUpper3ToLower3()
@@ -166,7 +167,7 @@ public class DiceGrid : MonoBehaviour
 
         upperDice3.name = "lowerDice3";
         
-        Invoke("ActivateUpperSpawner3", 0.25f);
+        Invoke("ActivateUpperSpawner3", 0.5f);
     }
 
     private void MoveUpper4ToLower4()
@@ -177,7 +178,7 @@ public class DiceGrid : MonoBehaviour
 
         upperDice4.name = "lowerDice4";
         
-        Invoke("ActivateUpperSpawner4", 0.25f);
+        Invoke("ActivateUpperSpawner4", 0.5f);
     }
 
     private void MoveUpper5ToLower5()
@@ -188,7 +189,7 @@ public class DiceGrid : MonoBehaviour
 
         upperDice5.name = "lowerDice5";
         
-        Invoke("ActivateUpperSpawner5", 0.25f);
+        Invoke("ActivateUpperSpawner5", 0.5f);
     }
 
     ////// Condition Check //////
@@ -257,7 +258,7 @@ public class DiceGrid : MonoBehaviour
             Invoke("MoveUpper4ToLower4", 0.35f); 
         }
     }
-    
+
     public void diceConditionCheck5()
     {
         if (lowerDice5 != null)
@@ -273,6 +274,5 @@ public class DiceGrid : MonoBehaviour
             Invoke("MoveUpper5ToLower5", 0.35f); 
         }
     }
-
 
 }
