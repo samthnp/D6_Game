@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1402753546844364520}
   - component: {fileID: -354953716737995426}
   - component: {fileID: 6674701818550999000}
-  - component: {fileID: -5286008346578073222}
   m_Layer: 0
   m_Name: blue dice 5
   m_TagString: DiceObject
@@ -134,22 +133,3 @@ MonoBehaviour:
   diceGrid: {fileID: 0}
   diceIsOutOfGrid: 0
   diceAnimator: {fileID: 0}
---- !u!95 &-5286008346578073222
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4948953088873923681}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0

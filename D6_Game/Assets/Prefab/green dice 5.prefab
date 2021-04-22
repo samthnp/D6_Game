@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7264852009644384529}
   - component: {fileID: 1379410862710094142}
   - component: {fileID: -1376880163091517175}
-  - component: {fileID: -5592245632529177607}
   m_Layer: 0
   m_Name: green dice 5
   m_TagString: DiceObject
@@ -134,22 +133,3 @@ MonoBehaviour:
   diceGrid: {fileID: 0}
   diceIsOutOfGrid: 0
   diceAnimator: {fileID: 0}
---- !u!95 &-5592245632529177607
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5845365332140072604}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0

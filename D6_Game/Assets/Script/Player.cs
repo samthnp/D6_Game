@@ -3,7 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-   public Vector3 mouseLocation;
    public float diceFocusMoveSpeed;
    
    public GameObject focusDice;
@@ -260,7 +259,7 @@ public class Player : MonoBehaviour
                  diceFocusPos.focusDiceOccupy == true &&
                  diceExceptionTriggered != true))
             {
-               hit.transform.GetComponent<DiceObject>().PlayDiceShake();
+               
             }
          
 
