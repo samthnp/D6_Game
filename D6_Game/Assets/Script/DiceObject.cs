@@ -22,11 +22,17 @@ public class DiceObject : MonoBehaviour
     public GameObject diceGrid;
 
     public bool diceIsOutOfGrid;
-
+    
     private void Start()
     {
+        // find the grid object to make a reference and store it as variable
         diceGrid = GameObject.FindGameObjectWithTag("DiceGrid");
 
+        // when the object is spawned set which column it belongs to
+        // since the dice always spawn according to the grid, it's possible to set the value accurately
+        
+        // dice spawn in the column1 transform will be marked as belong to column1
+        // this will go on until the last column which is column5
         if (this.transform.position == 
             diceGrid.GetComponent<DiceGrid>().upperSpawner1.transform.position &&
             diceIsOutOfGrid == false
@@ -34,7 +40,7 @@ public class DiceObject : MonoBehaviour
             ||
             
             (this.transform.position ==
-            diceGrid.GetComponent<DiceGrid>().lowerSpawner1.transform.position) &&
+             diceGrid.GetComponent<DiceGrid>().lowerSpawner1.transform.position) &&
             diceIsOutOfGrid == false)
         {
             isColumn1 = true;
@@ -93,6 +99,7 @@ public class DiceObject : MonoBehaviour
         }
     }
 
+    // update to ensure that during their movement, no dice is set into a different column
     private void Update()
     {
         if (diceIsOutOfGrid == true)
@@ -105,10 +112,13 @@ public class DiceObject : MonoBehaviour
         }
     }
 
+    // player access this function when clicking on dice, it will change the dice into focus
     public void CallDiceIsNowFocused()
     {
         Invoke("DiceIsNowFocused", 0.5f);
     }
+    
+    // this function will be called after a short delay to ensure it's not changed immediately and conflict with the dice refill system
     public void DiceIsNowFocused()
     {
         diceIsFocused = true;

@@ -16,11 +16,13 @@ public class ProgressBar : MonoBehaviour
         slider = gameObject.GetComponent<Slider>();
     }
 
+    // start with 0 progression
     private void Start()
     {
         slider.value = 0;
     }
 
+    // update the bar according to the score received
     private void Update()
     {
         if (slider.value < targetProgress)
@@ -33,6 +35,7 @@ public class ProgressBar : MonoBehaviour
         targetProgress = slider.value + newProgress;
     }
 
+    // reset bar for when the scene is reloaded
     public void ResetBar()
     {
         slider.value = 0;

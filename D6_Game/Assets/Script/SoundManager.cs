@@ -15,87 +15,64 @@ public class SoundManager : MonoBehaviour
     public AudioClip wrongCondition;
 
     public AudioClip discardDice;
+    
+    public AudioClip victorySound;
 
-    private void Update()
+    public AudioClip gameOverSound;
+
+    public float audioVolume = 0.5f;
+    
+    // functions to play sound individually
+    // there are 6 different sound for when getting score
+    // two more sound for when player lose health and discarding
+    public void PlayConditionMetSound1()
     {
-        if (Input.GetKeyUp(KeyCode.Z))
-        {
-            playConditionMetSound1();
-        }
-        
-        if (Input.GetKeyUp(KeyCode.X))
-        {
-            playConditionMetSound2();
-        }
-        
-        if (Input.GetKeyUp(KeyCode.C))
-        {
-            playConditionMetSound3();
-        }
-        
-        if (Input.GetKeyUp(KeyCode.V))
-        {
-            playConditionMetSound4();
-        }
-        
-        if (Input.GetKeyUp(KeyCode.B))
-        {
-            playConditionMetSound5();
-        }
-        
-        if (Input.GetKeyUp(KeyCode.N))
-        {
-            playConditionMetSound6();
-        }
-        
-        if (Input.GetKeyUp(KeyCode.M))
-        {
-            playWrongConditionSound();
-        }
-        
-        if (Input.GetKeyUp(KeyCode.Space))
-        {
-            playDiscardSound();
-        }
+        AudioSource.PlayClipAtPoint(conditionMetSound1, Camera.main.transform.position, audioVolume);
+    }
+    
+    public void PlayConditionMetSound2()
+    {
+        AudioSource.PlayClipAtPoint(conditionMetSound2, Camera.main.transform.position, audioVolume);
+    }
+    
+    public void PlayConditionMetSound3()
+    {
+        AudioSource.PlayClipAtPoint(conditionMetSound3, Camera.main.transform.position, audioVolume);
+    }
+    
+    public void PlayConditionMetSound4()
+    {
+        AudioSource.PlayClipAtPoint(conditionMetSound4, Camera.main.transform.position, audioVolume);
+    }
+    
+    public void PlayConditionMetSound5()
+    {
+        AudioSource.PlayClipAtPoint(conditionMetSound5, Camera.main.transform.position, audioVolume);
+    }
+    
+    public void PlayConditionMetSound6()
+    {
+        AudioSource.PlayClipAtPoint(conditionMetSound6, Camera.main.transform.position, audioVolume);
     }
 
-    public void playConditionMetSound1()
+    public void PlayWrongConditionSound()
     {
-        AudioSource.PlayClipAtPoint(conditionMetSound1, Camera.main.transform.position, 0.1f);
-    }
-    
-    public void playConditionMetSound2()
-    {
-        AudioSource.PlayClipAtPoint(conditionMetSound2, Camera.main.transform.position, 0.1f);
-    }
-    
-    public void playConditionMetSound3()
-    {
-        AudioSource.PlayClipAtPoint(conditionMetSound3, Camera.main.transform.position, 0.1f);
-    }
-    
-    public void playConditionMetSound4()
-    {
-        AudioSource.PlayClipAtPoint(conditionMetSound4, Camera.main.transform.position, 0.1f);
-    }
-    
-    public void playConditionMetSound5()
-    {
-        AudioSource.PlayClipAtPoint(conditionMetSound5, Camera.main.transform.position, 0.1f);
-    }
-    
-    public void playConditionMetSound6()
-    {
-        AudioSource.PlayClipAtPoint(conditionMetSound6, Camera.main.transform.position, 0.1f);
+        AudioSource.PlayClipAtPoint(wrongCondition, Camera.main.transform.position, audioVolume);
     }
 
-    public void playWrongConditionSound()
+    public void PlayDiscardSound()
     {
-        AudioSource.PlayClipAtPoint(wrongCondition, Camera.main.transform.position, 0.1f);
+        AudioSource.PlayClipAtPoint(discardDice, Camera.main.transform.position, audioVolume);
     }
 
-    public void playDiscardSound()
+    // not sure if we need to do a victory or game over scene or not?
+    public void PlayVictorySound()
     {
-        AudioSource.PlayClipAtPoint(discardDice, Camera.main.transform.position, 0.1f);
+        AudioSource.PlayClipAtPoint(discardDice, Camera.main.transform.position, audioVolume);
+    }
+    
+    public void PlayGameOverSound()
+    {
+        AudioSource.PlayClipAtPoint(discardDice, Camera.main.transform.position, audioVolume);
     }
 }
