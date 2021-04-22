@@ -25,9 +25,9 @@ public class Player : MonoBehaviour
 
    private string currentColor;
    private int currentNumberValue;
-   
-   
 
+   private bool diceExceptionTriggered = false;
+   
   
 
    private void Start()
@@ -58,6 +58,13 @@ public class Player : MonoBehaviour
          // Check object of raycast from mouse
          if (hit.collider != null)
          {
+            if (hit.collider.CompareTag("DiceObject") &&
+                diceFocusPos.focusDiceOccupy == true &&
+                hit.transform.GetComponent<DiceObject>().diceNumberValue == 1 &&
+                currentNumberValue == 6)
+            {
+               diceExceptionTriggered = true;
+            }
             
             
             //////////////////////// move the dice from the grid into focus for the first time////////////////////////
@@ -102,6 +109,7 @@ public class Player : MonoBehaviour
                
                print(currentColor);
                print(currentNumberValue);
+               
 
                //diceColumn.MoveUpperToLower();
 
@@ -124,7 +132,11 @@ public class Player : MonoBehaviour
                  diceFocusPos.focusDiceOccupy == true && 
                  currentColor == hit.transform.GetComponent<DiceObject>().diceColor)
                
-               )
+               ||
+               
+                  (hit.collider.CompareTag("DiceObject") && 
+                   diceFocusPos.focusDiceOccupy == true && 
+                   diceExceptionTriggered == true))
             {
                MoveDiceToDiscard();
 
@@ -157,6 +169,9 @@ public class Player : MonoBehaviour
                
                print(currentColor);
                print(currentNumberValue);
+               
+
+               diceExceptionTriggered = false;
                
                // set the bool value of clicked dice to true
                hit.transform.GetComponent<DiceObject>().CallDiceIsNowFocused();
@@ -200,12 +215,22 @@ public class Player : MonoBehaviour
          dice.transform.position = Vector2.Lerp
             (dice.transform.position, removeDiceTransform.position, diceFocusMoveSpeed * Time.deltaTime);
          print("Dice are discarded");
+         
+         Invoke("DestroyDiscardDice", 0.5f);
       }
    }
 
-   private void MoveUpperDiceToLowerDice()
+   private void DestroyDiscardDice()
    {
-      
+      GameObject[] diceToDiscard; 
+      diceToDiscard = GameObject.FindGameObjectsWithTag("FocusDice");
+      foreach (GameObject dice in diceToDiscard)
+      {
+         if (dice.transform.position != focusDiceTransform.position)
+         {
+            Destroy(dice);
+         }
+      }
    }
 
    private void FocusIsOccupy()

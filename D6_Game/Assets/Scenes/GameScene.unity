@@ -258,15 +258,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1084677617942981973, guid: 954ccb81858574d44b2f0ed89cefd396, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.47
+      value: 2.330685
       objectReference: {fileID: 0}
     - target: {fileID: 1084677617942981973, guid: 954ccb81858574d44b2f0ed89cefd396, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.47
+      value: 2.330685
       objectReference: {fileID: 0}
     - target: {fileID: 1084677617942981973, guid: 954ccb81858574d44b2f0ed89cefd396, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.47
+      value: 2.330685
       objectReference: {fileID: 0}
     - target: {fileID: 1084677617942981973, guid: 954ccb81858574d44b2f0ed89cefd396, type: 3}
       propertyPath: m_LocalPosition.x
@@ -346,7 +346,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 82786309}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.87, z: 0}
+  m_LocalPosition: {x: 0, y: 7.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2011209981}
@@ -518,7 +518,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 275565156}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.82, z: 0}
+  m_LocalPosition: {x: 0, y: 2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1347938240}
@@ -584,7 +584,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 355521004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.87, z: 0}
+  m_LocalPosition: {x: 0, y: 7.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1347938240}
@@ -614,7 +614,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 378156668}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.82, z: 0}
+  m_LocalPosition: {x: 0, y: 2.47, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 988214554}
@@ -1070,7 +1070,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 958815216}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.82, z: 0}
+  m_LocalPosition: {x: 0, y: 2.43, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373835947}
@@ -1087,8 +1087,8 @@ GameObject:
   - component: {fileID: 988214554}
   - component: {fileID: 988214553}
   m_Layer: 0
-  m_Name: DiceSpawnerColumn (1)
-  m_TagString: Untagged
+  m_Name: DiceSpawnerColumn2
+  m_TagString: DiceSpawnerColumn
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1120,6 +1120,7 @@ MonoBehaviour:
   greenDice4: {fileID: 4616063017453207117, guid: ddcbb200da4c4f14c93ef79e6e9dd16e, type: 3}
   greenDice5: {fileID: 5845365332140072604, guid: 147242e712eb75947ba52b4993a2ce72, type: 3}
   greenDice6: {fileID: 3063454324316771033, guid: db9f064eb6b0a4646b6876dc35f8eb6c, type: 3}
+  diceMovementSpeed: 1000
 --- !u!4 &988214554
 Transform:
   m_ObjectHideFlags: 0
@@ -1128,7 +1129,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988214552}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.34, y: -4.14, z: -1.3563663}
+  m_LocalPosition: {x: -16.009998, y: -4.14, z: -1.3563663}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 378156669}
@@ -1227,7 +1228,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1190354181}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.82, z: 0}
+  m_LocalPosition: {x: 0, y: 2.57, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2055310360}
@@ -1257,7 +1258,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243156905}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.87, z: 0}
+  m_LocalPosition: {x: 0, y: 7.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373835947}
@@ -1274,8 +1275,8 @@ GameObject:
   - component: {fileID: 1347938240}
   - component: {fileID: 1347938239}
   m_Layer: 0
-  m_Name: DiceSpawnerColumn (4)
-  m_TagString: Untagged
+  m_Name: DiceSpawnerColumn5
+  m_TagString: DiceSpawnerColumn
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1307,6 +1308,7 @@ MonoBehaviour:
   greenDice4: {fileID: 4616063017453207117, guid: ddcbb200da4c4f14c93ef79e6e9dd16e, type: 3}
   greenDice5: {fileID: 5845365332140072604, guid: 147242e712eb75947ba52b4993a2ce72, type: 3}
   greenDice6: {fileID: 3063454324316771033, guid: db9f064eb6b0a4646b6876dc35f8eb6c, type: 3}
+  diceMovementSpeed: 1000
 --- !u!4 &1347938240
 Transform:
   m_ObjectHideFlags: 0
@@ -1315,7 +1317,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347938238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25.92, y: -4.14, z: -1.3563663}
+  m_LocalPosition: {x: -26.05, y: -4.14, z: -1.3563663}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 275565157}
@@ -1512,8 +1514,8 @@ GameObject:
   - component: {fileID: 1373835947}
   - component: {fileID: 1373835946}
   m_Layer: 0
-  m_Name: DiceSpawnerColumn (3)
-  m_TagString: Untagged
+  m_Name: DiceSpawnerColumn4
+  m_TagString: DiceSpawnerColumn
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1545,6 +1547,7 @@ MonoBehaviour:
   greenDice4: {fileID: 4616063017453207117, guid: ddcbb200da4c4f14c93ef79e6e9dd16e, type: 3}
   greenDice5: {fileID: 5845365332140072604, guid: 147242e712eb75947ba52b4993a2ce72, type: 3}
   greenDice6: {fileID: 3063454324316771033, guid: db9f064eb6b0a4646b6876dc35f8eb6c, type: 3}
+  diceMovementSpeed: 1000
 --- !u!4 &1373835947
 Transform:
   m_ObjectHideFlags: 0
@@ -1553,7 +1556,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1373835945}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.06, y: -4.14, z: -1.3563663}
+  m_LocalPosition: {x: -12.1, y: -4.14, z: -1.3563663}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 958815217}
@@ -1678,7 +1681,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1412204329}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.87, z: 0}
+  m_LocalPosition: {x: 0, y: 7.57, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 988214554}
@@ -1820,7 +1823,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1724462558}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.82, z: 0}
+  m_LocalPosition: {x: 0, y: 2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2011209981}
@@ -1955,7 +1958,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1918915293}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.87, z: 0}
+  m_LocalPosition: {x: 0, y: 7.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2055310360}
@@ -2096,8 +2099,8 @@ GameObject:
   - component: {fileID: 2011209981}
   - component: {fileID: 2011209980}
   m_Layer: 0
-  m_Name: DiceSpawnerColumn
-  m_TagString: Untagged
+  m_Name: DiceSpawnerColumn1
+  m_TagString: DiceSpawnerColumn
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2129,6 +2132,7 @@ MonoBehaviour:
   greenDice4: {fileID: 4616063017453207117, guid: ddcbb200da4c4f14c93ef79e6e9dd16e, type: 3}
   greenDice5: {fileID: 5845365332140072604, guid: 147242e712eb75947ba52b4993a2ce72, type: 3}
   greenDice6: {fileID: 3063454324316771033, guid: db9f064eb6b0a4646b6876dc35f8eb6c, type: 3}
+  diceMovementSpeed: 1000
 --- !u!4 &2011209981
 Transform:
   m_ObjectHideFlags: 0
@@ -2137,7 +2141,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2011209979}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.84, y: -4.14, z: -1.3563663}
+  m_LocalPosition: {x: -19.509998, y: -4.14, z: -1.3563663}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1724462559}
@@ -2157,8 +2161,8 @@ GameObject:
   - component: {fileID: 2055310360}
   - component: {fileID: 2055310359}
   m_Layer: 0
-  m_Name: DiceSpawnerColumn (2)
-  m_TagString: Untagged
+  m_Name: DiceSpawnerColumn3
+  m_TagString: DiceSpawnerColumn
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2190,6 +2194,7 @@ MonoBehaviour:
   greenDice4: {fileID: 4616063017453207117, guid: ddcbb200da4c4f14c93ef79e6e9dd16e, type: 3}
   greenDice5: {fileID: 5845365332140072604, guid: 147242e712eb75947ba52b4993a2ce72, type: 3}
   greenDice6: {fileID: 3063454324316771033, guid: db9f064eb6b0a4646b6876dc35f8eb6c, type: 3}
+  diceMovementSpeed: 1000
 --- !u!4 &2055310360
 Transform:
   m_ObjectHideFlags: 0
@@ -2198,7 +2203,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2055310358}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.81, y: -4.14, z: -1.3563663}
+  m_LocalPosition: {x: -22.48, y: -4.14, z: -1.3563663}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1190354182}
