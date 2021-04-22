@@ -146,6 +146,8 @@ public class DiceGrid : MonoBehaviour
         upperDice1.name = "lowerDice1";
 
         Invoke("ActivateUpperSpawner1", 0.5f);
+        
+        print("Move upper 1 to lower 1");
     }
 
     private void MoveUpper2ToLower2()
@@ -157,6 +159,8 @@ public class DiceGrid : MonoBehaviour
         upperDice2.name = "lowerDice2";
         
         Invoke("ActivateUpperSpawner2", 0.5f);
+        
+        print("Move upper 2 to lower 2");
     }
 
     private void MoveUpper3ToLower3()
@@ -168,6 +172,8 @@ public class DiceGrid : MonoBehaviour
         upperDice3.name = "lowerDice3";
         
         Invoke("ActivateUpperSpawner3", 0.5f);
+        
+        print("Move upper 3 to lower 3");
     }
 
     private void MoveUpper4ToLower4()
@@ -179,6 +185,8 @@ public class DiceGrid : MonoBehaviour
         upperDice4.name = "lowerDice4";
         
         Invoke("ActivateUpperSpawner4", 0.5f);
+        
+        print("Move upper 4 to lower 4");
     }
 
     private void MoveUpper5ToLower5()
@@ -190,6 +198,8 @@ public class DiceGrid : MonoBehaviour
         upperDice5.name = "lowerDice5";
         
         Invoke("ActivateUpperSpawner5", 0.5f);
+        
+        print("Move upper 5 to lower 5");
     }
 
     ////// Condition Check //////
@@ -205,7 +215,7 @@ public class DiceGrid : MonoBehaviour
             } 
         }
 
-        else
+        else if (lowerDice1 == null)
         {
             Invoke("MoveUpper1ToLower1", 0.35f); 
         }
@@ -221,7 +231,7 @@ public class DiceGrid : MonoBehaviour
             } 
         }
 
-        else
+        else if (lowerDice2 == null)
         {
             Invoke("MoveUpper2ToLower2", 0.35f); 
         }
@@ -237,7 +247,7 @@ public class DiceGrid : MonoBehaviour
             } 
         }
 
-        else
+        else if (lowerDice3 == null)
         {
             Invoke("MoveUpper3ToLower3", 0.35f); 
         }
@@ -253,7 +263,7 @@ public class DiceGrid : MonoBehaviour
             } 
         }
 
-        else
+        else if (lowerDice4 == null)
         {
             Invoke("MoveUpper4ToLower4", 0.35f); 
         }
@@ -269,7 +279,7 @@ public class DiceGrid : MonoBehaviour
             } 
         }
 
-        else
+        else if (lowerDice5 == null)
         {
             Invoke("MoveUpper5ToLower5", 0.35f); 
         }

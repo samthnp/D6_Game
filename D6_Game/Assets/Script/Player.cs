@@ -105,6 +105,8 @@ public class Player : MonoBehaviour
                // set the color and number value of the clicked dice into current value
                currentColor = hit.transform.GetComponent<DiceObject>().diceColor;
                currentNumberValue = hit.transform.GetComponent<DiceObject>().diceNumberValue;
+               
+               WhichAudioToPlay();
 
                print(currentColor);
                print(currentNumberValue);
@@ -198,6 +200,8 @@ public class Player : MonoBehaviour
                // continue to set current value of color and number from the clicked dice
                currentColor = hit.transform.GetComponent<DiceObject>().diceColor;
                currentNumberValue = hit.transform.GetComponent<DiceObject>().diceNumberValue;
+               
+               WhichAudioToPlay();
 
                print(currentColor);
                print(currentNumberValue);
@@ -376,6 +380,39 @@ public class Player : MonoBehaviour
          playerHealth = 6;
          
          progressBar.ResetBar();
+      }
+   }
+
+   void WhichAudioToPlay()
+   {
+      if (ChainCounter.chainValue <= 1)
+      {
+         soundManager.playConditionMetSound1();
+      }
+      
+      if (ChainCounter.chainValue == 2)
+      {
+         soundManager.playConditionMetSound2();
+      }
+      
+      if (ChainCounter.chainValue == 3)
+      {
+         soundManager.playConditionMetSound3();
+      }
+      
+      if (ChainCounter.chainValue == 4)
+      {
+         soundManager.playConditionMetSound4();
+      }
+      
+      if (ChainCounter.chainValue == 5)
+      {
+         soundManager.playConditionMetSound5();
+      }
+      
+      if (ChainCounter.chainValue == 6)
+      {
+         soundManager.playConditionMetSound6();
       }
    }
    
