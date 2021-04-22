@@ -22,6 +22,7 @@ public class Player : MonoBehaviour
    public ProgressBar progressBar;
 
    public DiceColumn diceColumn;
+   public DiceGrid diceGrid;
 
    private string currentColor;
    private int currentNumberValue;
@@ -110,10 +111,37 @@ public class Player : MonoBehaviour
                print(currentColor);
                print(currentNumberValue);
                
-
-               //diceColumn.MoveUpperToLower();
-
-               //diceColumn.MoveHiddenToUpper();
+               diceGrid.diceConditionCheck1();
+               diceGrid.diceConditionCheck2();
+               diceGrid.diceConditionCheck3();
+               diceGrid.diceConditionCheck4();
+               diceGrid.diceConditionCheck5();
+               
+               if (hit.transform.GetComponent<DiceObject>().isColumn1 == true)
+               {
+                  diceGrid.diceConditionCheck1();
+               }
+               
+               if (hit.transform.GetComponent<DiceObject>().isColumn2 == true)
+               {
+                  diceGrid.diceConditionCheck2();
+               }
+               
+               if (hit.transform.GetComponent<DiceObject>().isColumn3 == true)
+               {
+                  diceGrid.diceConditionCheck3();
+               }
+               
+               if (hit.transform.GetComponent<DiceObject>().isColumn4 == true)
+               {
+                  diceGrid.diceConditionCheck4();
+               }
+               
+               if (hit.transform.GetComponent<DiceObject>().isColumn5 == true)
+               {
+                  diceGrid.diceConditionCheck5();
+               }
+               
             }
             
             
@@ -175,6 +203,32 @@ public class Player : MonoBehaviour
                
                // set the bool value of clicked dice to true
                hit.transform.GetComponent<DiceObject>().CallDiceIsNowFocused();
+
+               if (hit.transform.GetComponent<DiceObject>().isColumn1 == true)
+               {
+                  diceGrid.diceConditionCheck1();
+               }
+               
+               if (hit.transform.GetComponent<DiceObject>().isColumn2 == true)
+               {
+                  diceGrid.diceConditionCheck2();
+               }
+               
+               if (hit.transform.GetComponent<DiceObject>().isColumn3 == true)
+               {
+                  diceGrid.diceConditionCheck3();
+               }
+               
+               if (hit.transform.GetComponent<DiceObject>().isColumn4 == true)
+               {
+                  diceGrid.diceConditionCheck4();
+               }
+               
+               if (hit.transform.GetComponent<DiceObject>().isColumn5 == true)
+               {
+                  diceGrid.diceConditionCheck5();
+               }
+               
             }
 
 

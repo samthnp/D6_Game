@@ -11,30 +11,58 @@ public class DiceObject : MonoBehaviour
     public int diceNumberValue;
 
     public bool diceIsFocused = false;
-    
-    private bool isUpperDice = false;
-    private bool isLowerDice = false;
-    private bool isHiddenDice = false;
 
+    public bool isColumn1 = false;
+    public bool isColumn2 = false;
+    public bool isColumn3 = false;
+    public bool isColumn4 = false;
+    public bool isColumn5 = false;
+
+    public GameObject diceGrid;
+    
     private void Start()
     {
+        diceGrid = GameObject.FindGameObjectWithTag("DiceGrid");
+
+        if (this.transform.position == 
+            diceGrid.GetComponent<DiceGrid>().upperSpawner1.transform.position ||
+            this.transform.position ==
+            diceGrid.GetComponent<DiceGrid>().lowerSpawner1.transform.position)
+        {
+            isColumn1 = true;
+        }
         
-        /*
-        if ()
+        if (this.transform.position == 
+            diceGrid.GetComponent<DiceGrid>().upperSpawner2.transform.position ||
+            this.transform.position ==
+            diceGrid.GetComponent<DiceGrid>().lowerSpawner2.transform.position)
         {
-            isUpperDice = true;
+            isColumn2 = true;
         }
-
-        if ()
+        
+        if (this.transform.position == 
+            diceGrid.GetComponent<DiceGrid>().upperSpawner3.transform.position ||
+            this.transform.position ==
+            diceGrid.GetComponent<DiceGrid>().lowerSpawner3.transform.position)
         {
-            isLowerDice = true;
+            isColumn3 = true;
         }
-
-        if ()
+        
+        if (this.transform.position == 
+            diceGrid.GetComponent<DiceGrid>().upperSpawner4.transform.position ||
+            this.transform.position ==
+            diceGrid.GetComponent<DiceGrid>().lowerSpawner4.transform.position)
         {
-            isHiddenDice = true;
+            isColumn4 = true;
         }
-        */
+        
+        if (this.transform.position == 
+            diceGrid.GetComponent<DiceGrid>().upperSpawner5.transform.position ||
+            this.transform.position ==
+            diceGrid.GetComponent<DiceGrid>().lowerSpawner5.transform.position)
+        {
+            isColumn5 = true;
+        }
     }
 
 
