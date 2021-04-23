@@ -67,7 +67,7 @@ public class DiceGrid : MonoBehaviour
 
     private void Start()
     {
-        // spawn all the dice in their locaiton
+        // spawn all the dice in their respective locaiton
         ActivateUpperSpawner1();
         ActivateUpperSpawner2();
         ActivateUpperSpawner3();
@@ -230,10 +230,13 @@ public class DiceGrid : MonoBehaviour
     // if it's missing, it will call the dice refill functions above and run the loop
     public void diceConditionCheck1()
     {
+        // if the dice in target is not null
         if (lowerDice1 != null)
         {
+            // if the transform of the dice is no longer aligned with it's original position
             if (lowerDice1.transform.position != lowerSpawner1.transform.position)
             {
+                // invoke the dice movement refill with a slight delay
                 Invoke("MoveUpper1ToLower1", 0.35f); 
             } 
         }

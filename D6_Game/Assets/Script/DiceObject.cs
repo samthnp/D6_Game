@@ -6,21 +6,26 @@ using Random = UnityEngine.Random;
 
 public class DiceObject : MonoBehaviour
 {
-
+    // variable to store the value of color fo each dice
     public string diceColor;
 
+    // variable to store the number value
     public int diceNumberValue;
 
+    // a boolean variable too indicate if the dice is still in the grid or in focus
     public bool diceIsFocused = false;
 
+    // a boolean variable that identify which column they belong to. They're used as soon as the dice is spawned
     public bool isColumn1 = false;
     public bool isColumn2 = false;
     public bool isColumn3 = false;
     public bool isColumn4 = false;
     public bool isColumn5 = false;
 
+    // a GameObject reference to the diceGrid class in the game world
     public GameObject diceGrid;
 
+    // a boolean variable is communicate with the Player class when it is clicked and on the move to the focus section
     public bool diceIsOutOfGrid;
     
     private void Start()
@@ -31,8 +36,10 @@ public class DiceObject : MonoBehaviour
         // when the object is spawned set which column it belongs to
         // since the dice always spawn according to the grid, it's possible to set the value accurately
         
-        // dice spawn in the column1 transform will be marked as belong to column1
-        // this will go on until the last column which is column5
+        /* dice spawn in the column1 transform will be marked as belong to column1
+         this will go on until the last column which is column5 */
+
+        // in this first condition if
         if (this.transform.position == 
             diceGrid.GetComponent<DiceGrid>().upperSpawner1.transform.position &&
             diceIsOutOfGrid == false
@@ -99,9 +106,10 @@ public class DiceObject : MonoBehaviour
         }
     }
 
-    // update to ensure that during their movement, no dice is set into a different column
+    // update to ensure that during their movement, no dice is set into a different column with the isColumn variables
     private void Update()
     {
+        // if they are out of grid, make sure to mark them all as a dice without any reference to the column
         if (diceIsOutOfGrid == true)
         {
             isColumn1 = false;
